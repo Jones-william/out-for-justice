@@ -1,0 +1,9 @@
+{
+    "debug": true,
+    "host": "localhost",
+    "port": 5000,
+    "static_path": "www",
+    "template_path": "www",
+    "static_url_prefix":  "static",
+    "cookie_secret": "w5U7lDZnaZyMVlTjrIuP"
+}
