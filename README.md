@@ -1,4 +1,12 @@
-out-for-justice
+Out for Justice
 ===============
 
-BayesImpact Hackathon
+Work at the BayesImpact Hackathon on using the SFPD police report data to predict crime and optimize police patrols.
+
+Team Members
+============
+
+* Ta Virot Chiraphadhanakul
+* Solomon Messing
+* Alex Peysakhovich
+* Sean J. Taylor
