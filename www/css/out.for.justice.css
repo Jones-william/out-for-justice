@@ -18,13 +18,36 @@ body {
   margin: 0;
 }
 
+#form-column {
+  background-color: #333;
+  margin: 0;
+}
+
 #map-column {
   margin: 0;
   padding: 0;
 }
 
 #map {
+  background-color: #fff;
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+.ui.menu {
+  border-radius: 0;
+}
+
+.ui.form {
+  padding-top: 24px;
+}
+
+.ui.form .dropdown {
+  margin-bottom: 12px;
+}
+
+#visualize-submit {
+  display: block;
+  margin-top: 12px;
 }

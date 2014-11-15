@@ -1,7 +1,7 @@
 {
     "debug": true,
     "host": "localhost",
-    "port": 5000,
+    "port": 8888,
     "static_path": "www",
     "template_path": "www",
     "static_url_prefix":  "static",

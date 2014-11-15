@@ -20,7 +20,7 @@ class BaseHandler(RequestHandler):
 
     def get_static_url(self, path):
         return '%s://%s%s' % (self.request.protocol, self.request.host, path)
-    
+
     def write_json(self, d):
         self.write(json.dumps(d))
 
