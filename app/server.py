@@ -15,7 +15,7 @@ from tornado.gen import coroutine
 
 # so so lazy
 sys.path.append('.')
-from app.optim import slow_compute_loss, random_downhill_walk
+from app.optim import slow_compute_loss, random_downhill_walk, fast_random_downhill_walk
 
 timestr = {
     'morning': '2am_10am',
@@ -60,8 +60,9 @@ class LossHandler(BaseHandler):
     """
     Compute loss from car positioning.
     """
-    def initialize(self, graph):
+    def initialize(self, graph, latlons=None):
         self.graph = graph
+        self.latlons = latlons
 
     def compute_loss(self, risks, positions):
         N = self.graph.number_of_nodes()
@@ -103,7 +104,7 @@ class StepHandler(LossHandler):
         day_of_week = params.get('dow', 'friday')
         positions = params['positions'] # list of integers
 
-        steps = params.get('steps', 10)
+        steps = params.get('steps', 100)
         prob_step = params.get('prob_step', .25)
 
         fn = 'data/sf_crime_risks_{}_{}.npy'.format(time_of_day, day_of_week)
@@ -115,14 +116,31 @@ class StepHandler(LossHandler):
 
         weights = np.array(params.get('weights', [3, 3, 3]))
 
-        new_positions = random_downhill_walk(
+        new_positions = fast_random_downhill_walk(
             self.graph,
+            self.latlons,
             positions_vec,
             risks * weights,
             num_steps=steps,
             prob_step=prob_step)
 
+        # new_positions = random_downhill_walk(
+        #     self.graph,
+        #     positions_vec,
+        #     risks * weights,
+        #     num_steps=steps,
+        #     prob_step=prob_step)
+
         return self.compute_loss(risks, list(new_positions.nonzero()[0]))
+
+
+def extract_latlons(graph):
+    coords = []
+    for node_id in graph.nodes_iter():
+        data = graph.node[node_id]['data']
+        coords.append([data.lat, data.lon ])
+
+    return np.array(coords)
 
 if __name__ == '__main__':
     from tornado.options import define, options
@@ -141,6 +159,7 @@ if __name__ == '__main__':
         print('Loading graph...', end=' ')
         graph = pickle.load(f)
         graph = nx.convert_node_labels_to_integers(graph)
+        latlons = extract_latlons(graph)
         print('Done.')
 
     config['static_path'] = os.path.join(
@@ -151,7 +170,7 @@ if __name__ == '__main__':
         (r'/', MainHandler),
         (r'/api/heatmap.json', HeatMapHandler),
         (r'/api/loss', LossHandler, {'graph': graph}),
-        (r'/api/step', StepHandler, {'graph': graph}),
+        (r'/api/step', StepHandler, {'graph': graph, 'latlons': latlons}),
         (r'/((?:css|fonts|js|img|json)/.*)', StaticFileHandler, {'path': config['static_path']}),
     ], **config)
 
