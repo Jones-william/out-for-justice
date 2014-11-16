@@ -15,6 +15,50 @@ $(document)
       .rating('enable')
       .rating('set rating', 3);
     //$('.enable.button').on('click', function());
+
+    // defaults here because I have no idea what I'm doing
+    $("#dowdropdown").dropdown('set value', 'friday');
+    $("#toddropdown").dropdown('set value', 'evening');
+
+    // Ta I know this isn't what you wanted but it should work for now.
+    $("#predict").click(function() {
+      var qs = {
+        dow: $("#dowdropdown").dropdown('get value'),
+        tod: $("#toddropdown").dropdown('get value')
+      }
+      var url = HEATMAP_API + '?' + $.param(qs);
+      d3.json(url, function(error, json){
+	  // does this replace the global???
+	  data = json.geometries;
+	  renderPoints(data, layers.heatmap, 'point');
+      });
+    });
+
+    $("#getcars").click(function() {
+      var num_cars = parseInt($("#numcars").val());
+      var json = {
+	  num_cars: num_cars,
+      };
+
+      $.ajax({
+         url: "/api/loss",
+         contentType: "application/json",
+         type: "POST",
+         data: JSON.stringify(json),
+         dataType: "json",
+	 success: function(resp) {
+           var newcars = []
+           for (var i = 0; i < resp.positions.length; i++) {
+             newcars.push(data[resp.positions[i]].coordinates);
+           }
+	   renderCars(newcars);
+	 }
+      });
+    });
+
+    $("#evaluate").click(function() {
+
+    });
   })
 ;
 
@@ -59,6 +103,7 @@ function init() {
   map.on('viewreset', update);
   map.on('resize', update);
   map.on('moveend', alignSVG);
+
 }
 
 // Align SVG layer with map tiles

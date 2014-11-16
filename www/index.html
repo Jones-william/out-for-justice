@@ -19,23 +19,28 @@
     <div class="four wide column" id="form-column" style="overflow-y:scroll;">
       <!-- PREDICT -->
       <div class="ui form segment" id="form-predict">
-        <div class="ui selection dropdown">
-          <input type="hidden" name="dayOfWeek">
-          <div class="default text">Weekend</div>
+        <div id="dowdropdown" class="ui selection dropdown">
+          <input type="hidden" name="dow">
+          <div class="default text">Friday</div>
           <i class="dropdown icon"></i>
           <div class="menu">
-            <div class="item" data-value="weekday">Weekday</div>
-            <div class="item active" data-value="weekend">Weekend</div>
+            <div class="item" data-value="monday">Monday</div>
+	    <div class="item" data-value="tuesday">Tuesday</div>
+            <div class="item" data-value="wednesday">Wednesday</div>
+	    <div class="item" data-value="thursday">Thursday</div>
+            <div class="item active" data-value="friday">Friday</div>
+	    <div class="item" data-value="saturday">Saturday</div>
+            <div class="item" data-value="sunday">Sunday</div>
           </div>
         </div>
-        <div class="ui selection dropdown">
-          <input type="hidden" name="timeOfDay">
-          <div class="default text">Party time</div>
+        <div id="toddropdown" class="ui selection dropdown">
+          <input type="hidden" name="tod">
+          <div class="default text">Evening</div>
           <i class="dropdown icon"></i>
           <div class="menu">
-            <div class="item" data-value="party">Party time</div>
-            <div class="item" data-value="work">Working time</div>
-            <div class="item" data-value="sleep">Sleeping time</div>
+            <div class="item" data-value="morning">Morning</div>
+            <div class="item" data-value="daytime">Daytime</div>
+            <div class="item" data-value="evening">Evening</div>
           </div>
         </div>
         <div class="ui block">
@@ -65,8 +70,8 @@
       <!-- EVALUATE -->
       <div class="ui form segment" id="form-evaluate">
         <div class="ui action input">
-          <input type="text" placeholder="# patrol cars">
-          <div class="ui icon button">
+          <input id="numcars" type="text" placeholder="# patrol cars">
+          <div id="getcars" class="ui icon button">
             <i class="refresh icon"></i>
           </div>
         </div>
