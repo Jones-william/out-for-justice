@@ -35,7 +35,7 @@ def main(input_file):
 
             points.append(
                 Point(
-                    [df['X'].values[0], df['Y'].values[0]],
+                    [node_df['Y'].values[0], node_df['X'].values[0]],
                     node_id=node_id,
                     **values
                 ))
