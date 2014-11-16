@@ -20,6 +20,9 @@ $(document)
       .rating('enable')
       .rating('set rating', 3);
 
+    d3.select('#form-result')
+      .style('display', 'none');
+
     // defaults here because I have no idea what I'm doing
     $("#dowdropdown").dropdown('set value', 'friday');
     $("#toddropdown").dropdown('set value', 'evening');
@@ -51,7 +54,6 @@ $(document)
       var json = {
 	  num_cars: num_cars,
       };
-      console.log(num_cars);
       $.ajax({
          url: "/api/loss",
          contentType: "application/json",
@@ -70,6 +72,10 @@ $(document)
     });
 
     $("#evaluate").click(function() {
+      console.log('here');
+      d3.select('#form-result')
+        .style('display', 'block');
+
 	var json = {
 	    weights: [
 		$("#star-intox").rating("get rating"),
@@ -300,7 +306,7 @@ function renderCarIcon(e) {
 
 function update() {
   renderPoints(nodes, selectedType, layers.heatmap, 'point');
-  renderCars(cars);
+  renderCars(car_positions);
 }
 
 /* TESET */
