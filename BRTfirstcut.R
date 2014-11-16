@@ -5,9 +5,13 @@
 
 
 library("dplyr")
+setwd("~/sftp/out-for-justice/")
 setwd("~/Documents/workspace/BayesImpact/")
 #dat <- read.csv("data/SFPD_Incidents_-_Previous_Three_Months.csv")
 #dat <- read.csv("data/sfpd_service_calls.csv")
+
+# scp /Users/solomon/Documents/workspace/BayesImpact/data/incidents.csv solomon@dev1706.prn1.facebook.com:/home/solomon/sftp/out-for-justice/data/incidents.csv
+
 
 dat <- read.csv("data/incidents.csv")
 
@@ -92,41 +96,61 @@ cut_to_mean <- function(labs){
   mean)  
 }
 
+dat$daytime <- as.factor(dat$daytime)
+dat$superday <- as.factor(dat$superday)
+
 tiledat <- expand.grid(
     Xcut = levels(dat$Xcut),
-    Ycut = levels(dat$Ycut)) 
+    Ycut = levels(dat$Ycut),
+    crimetype = "VIOLENT",
+    daytime = levels(dat$daytime),
+    superday = levels(dat$superday))
 
 # Now summarize, counting crimes:
-ALL_CRIMESs <- dat %>% 
-    filter(crimetype != "DROP") %>%
+VIOLENTs <- dat %>% 
+    filter(crimetype == "VIOLENT") %>%
     group_by(Xcut, Ycut, crimetype, daytime, superday) %>% 
-    summarise(sum_crime = n()
-    )
+    summarise(sum_crime = n())
 
-tiled_ALL_CRIMESs <- left_join(tiledat, ALL_CRIMESs)
 
-#tiled_ALL_CRIMESs$sum_crime_q <- ecdf(tiled_ALL_CRIMESs$sum_crime)(tiled_ALL_CRIMESs$sum_crime)
-tiled_ALL_CRIMESs$X <- cut_to_mean(tiled_ALL_CRIMESs$Xcut)
-tiled_ALL_CRIMESs$Y <- cut_to_mean(tiled_ALL_CRIMESs$Ycut)
+levels(VIOLENTs$crimetype)
+levels(tiledat$crimetype)
+levels(tiled_VIOLENTs$daytime)
+#tiledat$crimetype <- as.character(tiledat$crimetype)
+
+tiled_VIOLENTs <- left_join(tiledat, VIOLENTs)
+summary(tiled_VIOLENTs$sum_crime)
+
+
+#tiled_VIOLENTs$sum_crime_q <- ecdf(tiled_VIOLENTs$sum_crime)(tiled_VIOLENTs$sum_crime)
+tiled_VIOLENTs$X <- cut_to_mean(tiled_VIOLENTs$Xcut)
+tiled_VIOLENTs$Y <- cut_to_mean(tiled_VIOLENTs$Ycut)
 
 ####################################
 # Now fit GBRTs
+#install.packages('dismo')
 library('dismo')
 
 # Set missing values to zero
-tiled_ALL_CRIMESs$sum_crime[is.na(tiled_ALL_CRIMESs$sum_crime)] <- 0
-tiled_ALL_CRIMESs$crimetype = as.factor(tiled_ALL_CRIMESs$crimetype)
-tiled_ALL_CRIMESs$daytime = as.factor(tiled_ALL_CRIMESs$daytime)
-tiled_ALL_CRIMESs$superday = as.factor(tiled_ALL_CRIMESs$superday)
+tiled_VIOLENTs$sum_crime[is.na(tiled_VIOLENTs$sum_crime)] <- 0
+#tiled_VIOLENTs$crimetype = as.factor(tiled_VIOLENTs$crimetype)
+#tiled_VIOLENTs$daytime = as.factor(tiled_VIOLENTs$daytime)
+#tiled_VIOLENTs$superday = as.factor(tiled_VIOLENTs$superday)
+
+summary(tiled_VIOLENTs$sum_crime)
+
+tiled_VIOLENTs[sample(nrow(tiled_VIOLENTs), 30),]
+
 
 m1 <- gbm.step(
-    data=tiled_ALL_CRIMESs, 
-    gbm.x = c(3:5, 7:8),
+    data=tiled_VIOLENTs, 
+    gbm.x = c(4:5, 7:8),
     gbm.y = 6,
     family = "poisson", 
     n.folds = 5,
     n.trees = 20,
-    tree.complexity = 2,
+    learning.rate = 0.01,
+    tree.complexity = 3,
     bag.fraction = 0.75)
 
 
@@ -135,8 +159,8 @@ m1 <- gbm.step(
 #ndat <- expand.grid(X = cut_to_mean(levels(dat$Xcut)), 
 #    Y = cut_to_mean(levels(dat$Ycut)), 
 #    crimetype = "VIOLENT",
-#    daytime = levels(tiled_ALL_CRIMESs$daytime),
-#    superday = levels(tiled_ALL_CRIMESs$superday))
+#    daytime = levels(tiled_VIOLENTs$daytime),
+#    superday = levels(tiled_VIOLENTs$superday))
 ndat <- expand.grid(X = cut_to_mean(levels(dat$Xcut)), 
     Y = cut_to_mean(levels(dat$Ycut)), 
     crimetype = "VIOLENT",
@@ -144,11 +168,16 @@ ndat <- expand.grid(X = cut_to_mean(levels(dat$Xcut)),
     superday = "Saturday")
 ndat$preds <- predict(m1, 
     newdata = ndat,
-    n.trees = 2060,
+    n.trees = 7620,
     type = "response")
-ndat$preds <- preds
 
 summary(ndat$preds)
+
+
+tiled_ALL_CRIMESs$fitted <- m1$fitted
+
+tiled_ALL_CRIMESs$resid <- tiled_ALL_CRIMESs$fitted - 
+
 
 #gbm.plot.fits(m1)
 #length(m1$fitted)
@@ -162,8 +191,13 @@ summary(ndat$preds)
 library("ggmap")
 library("ggplot2")
 g <- qmap("San Francisco", zoom = 12)  
-g +  geom_point(data=ndat[ndat$preds>2,], 
-        aes(x = X, y = Y, alpha = preds)) + 
+g +  geom_point(data=ndat[ndat$preds>1,], 
+        aes(x = X, y = Y, alpha = preds, size = preds)) +
+    geom_point(aes(y= 37.775271, x = -122.398685, color = "red", size=8)) +
+    annotate("text", label = "BayesImpact\nHackSite", 
+        y= 37.775271 - .005, x = -122.398685 + .02,
+        colour = "red") +
+    ggtitle("Predicted Violent Crimes\n(Poisson GBRT)") + 
     theme_bw() 
 ggsave("bla.pdf")
 
