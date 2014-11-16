@@ -1,6 +1,8 @@
 var HEATMAP_API = 'api/heatmap.json'
 var HEATMAP_COLOR = ["#f7f4f9","#e7e1ef","#d4b9da","#c994c7","#df65b0","#e7298a","#ce1256","#980043","#67001f"];
 
+var nodes;
+var selectedType = 'violent';
 var car_positions;
 
 function expandMap() {
@@ -17,11 +19,17 @@ $(document)
     $('.ui.star.rating')
       .rating('enable')
       .rating('set rating', 3);
-    //$('.enable.button').on('click', function());
 
     // defaults here because I have no idea what I'm doing
     $("#dowdropdown").dropdown('set value', 'friday');
     $("#toddropdown").dropdown('set value', 'evening');
+
+    $("#crimeType").change(function() {
+      selectedType = $("#crimeType input:checked").val();
+      if (nodes) {
+        renderPoints(nodes, selectedType, layers.heatmap, 'point');
+      }
+    });
 
     // Ta I know this isn't what you wanted but it should work for now.
     $("#predict").click(function() {
@@ -31,9 +39,10 @@ $(document)
       }
       var url = HEATMAP_API + '?' + $.param(qs);
       d3.json(url, function(error, json){
-	  // does this replace the global???
-	  nodes = json.geometries;
-	  renderPoints(nodes, 'intox', layers.heatmap, 'point');
+    	  // does this replace the global???
+    	  nodes = json.geometries;
+        init();
+    	  renderPoints(nodes, selectedType, layers.heatmap, 'point');
       });
     });
 
@@ -42,7 +51,7 @@ $(document)
       var json = {
 	  num_cars: num_cars,
       };
-
+      console.log(num_cars);
       $.ajax({
          url: "/api/loss",
          contentType: "application/json",
@@ -90,6 +99,11 @@ $(document)
 	       d3.round(resp.property / json.weights[1], 1));
 	   $('#violent-loss').text(
 	       d3.round(resp.violent / json.weights[2], 1));
+     $('#overall-loss').text(
+         d3.round(resp.intoxication  / json.weights[0] +
+          resp.property  / json.weights[1] +
+          resp.violent / json.weights[2]
+          , 1));
 
 	 }
       });
@@ -131,7 +145,7 @@ $(document)
 
 	 }
       });
-       
+
     });
   })
 ;
@@ -162,6 +176,10 @@ var svg;
 var layers = {};
 
 function init() {
+  d3.select(map.getPanes().overlayPane)
+    .select('svg')
+    .remove();
+
   svg = d3.select(map.getPanes().overlayPane)
     .append('svg')
   .attr('width', map.getSize().x * 2)
@@ -285,34 +303,15 @@ function update() {
   renderCars(cars);
 }
 
-function predict() {
-  var form = $('#form-predict');
+/* TESET */
 
-}
+// var cars = [[37.776317,-122.395569], [37.7483385,-122.4079037]];
 
-function evaluate() {
+// d3.json(HEATMAP_API, function(error, json){
+//   nodes = json.geometries;
 
-}
-
-function reset() {
-
-}
-
-function step() {
-
-}
-
-/* TEMP */
-
-var nodes;
-var selectedType = 'property';
-var cars = [[37.776317,-122.395569], [37.7483385,-122.4079037]];
-
-d3.json(HEATMAP_API, function(error, json){
-  nodes = json.geometries;
-
-  init();
-  renderPoints(nodes, selectedType, layers.heatmap, 'point');
-  renderCars(cars);
-});
+//   init();
+//   renderPoints(nodes, selectedType, layers.heatmap, 'point');
+//   renderCars(cars);
+// });
 
