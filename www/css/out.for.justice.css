@@ -55,10 +55,3 @@ body {
   display: block;
   margin-top: 16px;
 }
-
-/* Temporary */
-
-.point {
-  opacity: 0.5;
-  fill: #0AA5DF;
-}
