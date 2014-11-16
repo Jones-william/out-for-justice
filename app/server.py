@@ -73,7 +73,7 @@ if __name__ == '__main__':
     app = Application([
         (r'/', MainHandler),
         (r'/api/heatmap.json', HeatMapHandler, {'graph': graph}),
-        (r'/((?:css|fonts|js)/.*)', StaticFileHandler, {'path': config['static_path']}),
+        (r'/((?:css|fonts|js|img)/.*)', StaticFileHandler, {'path': config['static_path']}),
     ], **config)
 
     app.listen(config['port'])

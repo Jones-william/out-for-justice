@@ -10,6 +10,20 @@ function expandMap() {
 $(document)
   .ready(function() {
     $('.ui.selection.dropdown').dropdown();
+
+    // $('.ui.form')
+    //   .form({
+    //     firstName: {
+    //       identifier  : 'first-name',
+    //       rules: [
+    //         {
+    //           type   : 'empty',
+    //           prompt : 'Please enter your first name'
+    //         }
+    //       ]
+    //     },
+    //   })
+    // ;
   })
 ;
 
@@ -19,8 +33,8 @@ $(window).resize(expandMap);
 // Init map
 var map = L.map('map', {
   center: [37.788975, -122.403452],
-  zoom: 13,
-  minZoom: 8,
+  zoom: 14,
+  minZoom: 12,
   layers: new L.StamenTileLayer('toner-lite'),
   scrollWheelZoom: false,
   zoomControl: false
@@ -51,13 +65,9 @@ function init() {
 
   alignSVG();
 
-  // map.on('viewreset', update);
-  // map.on('resize', update);
+  map.on('viewreset', update);
+  map.on('resize', update);
   map.on('moveend', alignSVG);
-}
-
-function render() {
-
 }
 
 // Align SVG layer with map tiles
@@ -83,19 +93,74 @@ function alignSVG() {
 }
 
 function renderPoints(dat, target, classStr) {
-  var points = layers.pin.selectAll(classStr)
-    .data(dat);
+  target.selectAll('.' + classStr).remove();
+
+  var points = target.selectAll('.' + classStr)
+    .data(dat.map(function(d) {
+      return map.latLngToLayerPoint([d.coordinates[1], d.coordinates[0]]);
+    }));
 
   points.enter().append('circle')
     .attr('class', classStr)
-    .attr('r', 5)
-    .attr('cx', function(d) { return map.latLngToLayerPoint(d).x; } )
-    .attr('cy', function(d) { return map.latLngToLayerPoint(d).x; } )
+    .attr('r', map.getZoom() / 3.0)
+    .attr('cx', function(d) { return d.x; })
+    .attr('cy', function(d) { return d.y; });
 }
 
+function renderCars(dat) {
+  layers.pin.selectAll('.gCar').remove();
+
+  var groups = layers.pin.selectAll('.gCar')
+    .data(dat.map(function(d) {
+      return map.latLngToLayerPoint([d[1], d[0]]);
+    }));
+
+  groups.enter().append('g')
+    .attr('class', 'gCar')
+    .each(renderCarIcon);
+}
+
+function renderCarIcon(e) {
+  var g = d3.select(this);
+  g.selectAll('*').remove();
+
+  g.attr('transform',
+    'translate(' +  e.x + ',' + e.y + ')');
+
+  g.append('circle')
+    .attr('r', 28)
+    .style('fill', '#564F8A')
+    .style('fill-opacity', 0.5);
+
+  g.append('circle')
+    .attr('r', 24)
+    .style('fill', '#564F8A');
+
+  g.append('svg:image')
+    .attr('x',-16)
+    .attr('y',-16)
+    .attr('width', 32)
+    .attr('height', 32)
+    .attr('xlink:href','/img/police.png');
+}
+
+function update() {
+  renderPoints(data, layers.heatmap, 'point');
+  renderCars(cars);
+}
+
+/* TEMP */
+
+var data;
+var cars = [[-122.395569, 37.776317], [-122.4079037, 37.7483385]];
+
 d3.json(HEATMAP_API, function(error, json){
-  console.log(json);
+  data = json.geometries;
+  var lonExtent = d3.extent(data, function(d) { return d.coordinates[1]; });
+  var latExtent = d3.extent(data, function(d) { return d.coordinates[0]; });
+
   init();
-  renderPoints(json.coordinates, layers.pin, '.point');
+  renderPoints(data, layers.heatmap, 'point');
+  renderCars(cars);
 });
 
