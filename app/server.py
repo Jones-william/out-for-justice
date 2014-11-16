@@ -4,6 +4,7 @@ import os
 import sys
 import json
 import pickle
+import random
 
 import numpy as np
 import networkx as nx
@@ -77,7 +78,15 @@ class LossHandler(BaseHandler):
 
         time_of_day = timestr[params.get('tod', 'evening')]
         day_of_week = params.get('dow', 'friday')
-        positions = params['positions'] # list of integers
+
+        if 'positions' in params:
+            positions = params['positions'] # list of integers
+        elif 'num_cars' in params:
+            positions = random.sample(
+                xrange(self.graph.number_of_nodes()),
+                params['num_cars'])                      
+        else:
+            assert 0
 
         fn = 'data/sf_crime_risks_{}_{}.npy'.format(time_of_day, day_of_week)
         risks = np.load(fn)
