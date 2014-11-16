@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : ExtremeSurfing
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20120225
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Out For Justice</title>
+<link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34685078-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+
+<div id="wrapper">
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="page-content">
+					<div id="header-wrapper">
+						<div id="header">
+							<div id="logo">
+								<h1>Out For Justice</h1>
+							</div>
+						</div>
+					</div>
+					<!-- end #header -->
+					<center> <img src="header.jpg" width="900px"> </center></br>
+					<div id="content">
+						<div class="post">
+							<h2><center>About The Project</center></h2>
+								<div class="entry">
+
+								<p>Out for Justice is a project built in 24 hours at the <a href="http://www.bayesimpact.org" target=new>Bayes Impact</a> Hackathon using data from the San Francisco Police Department. Out For Justice is an an interpretable, customizable and interactive decision support system to help the SFPD optimize patrol car placement. Most importantly, Out for Justice allows the
+								user to set their own objectives and isn't simply a black box that outputs a solution. </p>
+
+								<p>The idea is simple: 911 calls for different crimes happen at different rates in different places in San Francisco. Police cars/patrols are a limited resource and decreasing response time to calls is a good thing.</p>
+
+								<p>Out for Justice allows the user to evaluate potential positions for patrol cars (if a violent crime were to be called in and my cars were set up like this, how long would it take to respond?) with custom weights for the importance of responding to different types of crimes fast (a minute later to a violent crime may be much less costly than to public drunkenness).
+								</p>
+
+								<p>Finally, Out for Justice helps the user set up good car positions! We implement an optimization algorithm we call MetroPolice-Hastings that can take an existing set of patrol car positions and show you how to readjust them to improve response times.</p>
+
+								<p><center><a>TRY IT!</a> or <a href="" target="new">Get the code on GitHub</a></center></p>
+								</div>
+
+							<h2><center>How Does It Work?</center></h2>
+								<div class="entry">
+
+								<p>Out for Justice is made of three components. First, we science some data. We take two years of SFPD 911 call data and use it to predict where future 911 calls are likely to come from. Second, real map data from Open Street Maps is used to simulate travel times from SF patrol cars to a call. Second, we optimize stuff. We take map data from Open Street Maps and use it to simulate travel times from SF patrol cars to a call. Finally, a simple interface makes interacting and drawing insights from Out for Justice easy.  </p>
+								</div>
+
+							<h2><center>Boosting for Great Justice</center></h2>
+								<div class="entry">
+
+								<p>The beating heart of Out for Justice is some really cool machine learning. We took a data set of two years of 911 calls in San Francisco that had attached latitude/longitude coordinates, discretized the city into a grid and trained boosted Poisson regression trees to predict the probability of a 911 call at each position. This makes some strong assumptions about the underlying process that are probably wrong, but hey, we only had 24 hours! After we trained the trees they could, in principle, predict at any latitude/longitude location in SF so we predicted Poisson arrival rates for every node in street graph that we built using Open Street Maps.</p>
+
+								<p>We tried several other approaches including 2d kernel density smoothing but found that the boosted trees were by far the best performing. We used the R package <i>gbm</i> to do the training.</p>
+
+								<p>For the initial project we focused on predicting three broad categories of crime: violent crimes (assaults, arson and forcible sex offenses), property crimes (burglary, vandalism, larceny and vehicle theft) and substance-based crimes (drunkeness or drug/narcotic). Our exploratory analyses also told us that it was a good idea to split the data by time into 3 epochs: nighttime (2AM-10AM), day time (10AM-6PM) and evening time aka party time (6PM-2AM).</p>
+
+								<p>Our analyses find some interesting patterns in the data. All the plots are done using the excellent R package <i>ggmaps.</i> There are definitely weekend/weekday patterns as well as daily cycles in the day (see below). The models and data are up in the GitHub directory above if you want to play with them!</p>
+
+								<center><img src="predcrimes.jpg" width=500px></center>
+								</div>
+
+							<h2><center>Computing the Costs</center></h2>
+								<div class="entry">
+
+								<p>So now we have probabilities of calls occuring at each node of the graph that is San Francisco. We can now take a set of patrol cars located at various points in the graph and calculate a score for that position, the score we use in the current version is an expected travel time given the way that calls are expected to come in both spatially (where does the call come from?) and temporally (how likely is a particular type of call?). The key innovation is the ability for the user to specify in the UI which types of calls are really important to respond to quickly and which ones are the kind where a minute's delay may not hurt things very much.</p>
+
+								<p>The current beta version only allows for random initial placements of a user-specified number of patrol cars, the easiest next feature to add is the ability to place the cars manually.</p>
+								</div>
+
+							<h2><center>Metro<font color=0000BB>Police</font>-Hastings Optimiziation</center></h2>
+								<div class="entry">
+
+								<p>The final core component of Out For Justice is an optimization algorithm. Given an existing car placement, it is natural to ask "can we do better?" We use a version of the Metropolis-Hastings algorithm to compute the answer to this question: first, we choose a random car to move a random distance on the graph.</p>
+
+								<p>To add stochasticity to this algorithm with a small probability we keep this move no matter what. With the complementary probability we do something smarter: we ask whether this move improves the weighted response time. If this move improves the response time by a meaningful amount, we keep it. If it doesn't, we revert it and try something else. This algorithm has a few parameters to tune, namely the probability of keeping any move and the threshold of improvement that we require to count the move as a success. The current version makes no pretense of having these parameters set optimally, though we did play with them somewhat.</p>
+								</div>
+							</div>
+						</div>
+
+
+					<!-- end #content -->
+					<div id="sidebar">
+						<ul>
+							<img src="team.jpg" width="300px">
+							<li>
+								<h2>The Out For Justice Team</h2>
+								<p>Ta Virot Chiraphadhanakul (<a href="https://twitter.com/tvirot">@tvirot</a>)</br>
+								Sean J. Taylor (<a href="https://twitter.com/seanjtaylor">@seanjtaylor</a>)</br>
+								Alex Peysakhovich (<a href="https://twitter.com/alex_peys">@alex_peys</a>) </br>
+								Solomon Messing (<a href="https://twitter.com/SolomonMg">@SolomonMg</a>)</br>
+								</p>
+							</li>
+						</ul>
+
+						<ul>
+						<img src="segal.jpg" width="300px">
+						</ul>
+
+						<ul>
+						<img src="book.jpg" width="300px">
+							<li>
+								<p>Machine learning: Data in, magic out.
+								</p>
+							</li>
+						</ul>
+
+						<ul>
+						<img src="first.jpg" width="300px">
+							<li>
+								<p>Our first version of the crime prediction (which turned out to have a bug) had us worried.
+								</p>
+							</li>
+						</ul>
+
+						<ul>
+						<img src="data.png" width="300px">
+						</ul>
+
+						<ul>
+						<img src="napkin.jpg" width="300px">
+							<li>
+								<p>All the best ideas can be explained by napkins, and our optimization algorithm is no exception.
+								</p>
+							</li>
+						</ul>
+					</div>
+					<!-- end #sidebar -->
+				</div>
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<!-- end #footer -->
+</body>
+</html>
