@@ -88,10 +88,12 @@ class LossHandler(BaseHandler):
         else:
             assert 0
 
+        weights = np.array(params.get('weights', [3, 3, 3]))
+
         fn = 'data/sf_crime_risks_{}_{}.npy'.format(time_of_day, day_of_week)
         risks = np.load(fn)
 
-        return self.compute_loss(risks, positions)
+        return self.compute_loss(risks * weights, positions)
 
 class StepHandler(LossHandler):
     def post(self):
@@ -100,7 +102,8 @@ class StepHandler(LossHandler):
         time_of_day = timestr[params.get('tod', 'evening')]
         day_of_week = params.get('dow', 'friday')
         positions = params['positions'] # list of integers
-        steps = params.get('steps', 5)
+
+        steps = params.get('steps', 10)
         prob_step = params.get('prob_step', .25)
 
         fn = 'data/sf_crime_risks_{}_{}.npy'.format(time_of_day, day_of_week)
@@ -110,9 +113,14 @@ class StepHandler(LossHandler):
         positions_vec = np.zeros(N)
         positions_vec[positions] = 1
 
-        new_positions = random_downhill_walk(self.graph, positions_vec, risks,
-                                             num_steps=steps,
-                                             prob_step=prob_step)
+        weights = np.array(params.get('weights', [3, 3, 3]))
+
+        new_positions = random_downhill_walk(
+            self.graph,
+            positions_vec,
+            risks * weights,
+            num_steps=steps,
+            prob_step=prob_step)
 
         return self.compute_loss(risks, list(new_positions.nonzero()[0]))
 

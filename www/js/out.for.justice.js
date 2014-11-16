@@ -1,6 +1,8 @@
 var HEATMAP_API = 'api/heatmap.json'
 var HEATMAP_COLOR = ["#f7f4f9","#e7e1ef","#d4b9da","#c994c7","#df65b0","#e7298a","#ce1256","#980043","#67001f"];
 
+var car_positions;
+
 function expandMap() {
   // Expand map to 100% height
   var offsetTop = $('#navbar').height();
@@ -30,8 +32,8 @@ $(document)
       var url = HEATMAP_API + '?' + $.param(qs);
       d3.json(url, function(error, json){
 	  // does this replace the global???
-	  data = json.geometries;
-	  renderPoints(data, 'intox', layers.heatmap, 'point');
+	  nodes = json.geometries;
+	  renderPoints(nodes, 'intox', layers.heatmap, 'point');
       });
     });
 
@@ -50,15 +52,86 @@ $(document)
 	 success: function(resp) {
            var newcars = []
            for (var i = 0; i < resp.positions.length; i++) {
-             newcars.push(data[resp.positions[i]].coordinates);
+             newcars.push(nodes[resp.positions[i]].coordinates);
            }
 	   renderCars(newcars);
+	   car_positions = resp.positions;
 	 }
       });
     });
 
     $("#evaluate").click(function() {
+	var json = {
+	    weights: [
+		$("#star-intox").rating("get rating"),
+		$("#star-property").rating("get rating"),
+		$("#star-violent").rating("get rating"),
+	    ],
+	    positions: car_positions,
+	    dow: $("#dowdropdown").dropdown('get value'),
+            tod: $("#toddropdown").dropdown('get value')
+	};
+      $.ajax({
+         url: "/api/loss",
+         contentType: "application/json",
+         type: "POST",
+         data: JSON.stringify(json),
+         dataType: "json",
+	 success: function(resp) {
+           var newcars = []
+           for (var i = 0; i < resp.positions.length; i++) {
+             newcars.push(nodes[resp.positions[i]].coordinates);
+           }
+	   renderCars(newcars);
 
+	   $('#intox-loss').text(
+	       d3.round(resp.intoxication / json.weights[0], 1));
+	   $('#property-loss').text(
+	       d3.round(resp.property / json.weights[1], 1));
+	   $('#violent-loss').text(
+	       d3.round(resp.violent / json.weights[2], 1));
+
+	 }
+      });
+    });
+
+    $("#step").click(function() {
+	var json = {
+	    weights: [
+		$("#star-intox").rating("get rating"),
+		$("#star-property").rating("get rating"),
+		$("#star-violent").rating("get rating"),
+	    ],
+	    positions: car_positions,
+	    dow: $("#dowdropdown").dropdown('get value'),
+            tod: $("#toddropdown").dropdown('get value')
+	};
+
+      $.ajax({
+         url: "/api/step",
+         contentType: "application/json",
+         type: "POST",
+         data: JSON.stringify(json),
+         dataType: "json",
+	 success: function(resp) {
+
+           var newcars = []
+           for (var i = 0; i < resp.positions.length; i++) {
+             newcars.push(nodes[resp.positions[i]].coordinates);
+           }
+	   renderCars(newcars);
+	   car_positions = resp.positions;
+
+	   $('#intox-loss').text(
+	       d3.round(resp.intoxication / json.weights[0], 1));
+	   $('#property-loss').text(
+	       d3.round(resp.property / json.weights[1], 1));
+	   $('#violent-loss').text(
+	       d3.round(resp.violent / json.weights[2], 1));
+
+	 }
+      });
+       
     });
   })
 ;

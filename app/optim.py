@@ -30,6 +30,9 @@ def step(graph, positions):
 
     return new_positions
 
+#def random_step(graph):
+#    old = random.choice(positions.nonzero()[0])
+
 
 def compute_loss(dist_mat, positions, risks, agg=np.sum):
     """
@@ -91,7 +94,9 @@ def slow_compute_loss(graph, positions, risks, agg=np.sum):
     else:
         return by_place
 
-def random_downhill_walk(graph, positions, risks, num_steps=100, prob_step=.25):
+def random_downhill_walk(graph, positions, risks, num_steps=100, 
+                         prob_step=.25,
+                         random_jump=0.50):
     """
     Parameters
     ----------

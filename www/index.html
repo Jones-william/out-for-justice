@@ -130,8 +130,8 @@
           <h2 class="ui header">
             <i class="large thumbs up outline icon"></i>
             <div class="content">
-            <div class="sub header">Weighted Response Time</div>
-            3.89
+            <div class="sub header">Weighted Distance (blocks)</div>
+            <span id="overall-loss"></span>
             </div>
           </h2>
         </div>
@@ -141,28 +141,28 @@
           <thead>
             <tr>
               <th></th>
-              <th>Avg response time</th>
+              <th>Avg Distance (blocks)</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Property</td>
-              <td>4.8</td>
+              <td><span id="property-loss"></span></td>
             </tr>
             <tr>
               <td>Substance</td>
-              <td>3.4</td>
+              <td><span id="intox-loss"></span></td>
             </tr>
             <tr>
               <td>Violence</td>
-              <td>1.2</td>
+              <td><span id="violent-loss"></span></td>
             </tr>
           </tbody>
         </table>
         <div class="ui right floated buttons" style="padding-top: 8px;">
           <div class="ui button">RESET</div>
           <div class="or"></div>
-          <div class="ui teal button">STEP</div>
+          <div id="step" class="ui teal button">STEP</div>
         </div>
       </div>
     </div>
