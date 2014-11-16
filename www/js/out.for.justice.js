@@ -31,7 +31,7 @@ $(document)
       d3.json(url, function(error, json){
 	  // does this replace the global???
 	  data = json.geometries;
-	  renderPoints(data, layers.heatmap, 'point');
+	  renderPoints(data, 'intox', layers.heatmap, 'point');
       });
     });
 
