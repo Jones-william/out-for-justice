@@ -11,7 +11,7 @@
 <body>
   <nav class="ui inverted teal menu" id="navbar">
     <h3 class="header item">Out For Justice</h3>
-    <a class="item" href="http://seanjtaylor.github.io/out-for-justice">About</a>
+    <a class="right aligned item" href="http://seanjtaylor.github.io/out-for-justice">About</a>
   </nav>
 
   <div class="ui content grid">
@@ -42,23 +42,23 @@
             <div class="item" data-value="evening">Evening</div>
           </div>
         </div>
-        <div class="ui block">
-          <div class="inline field">
-            <div class="ui toggle checkbox">
-              <input type="checkbox" checked="true" id="checkbox-property">
-              <label>Property</label>
+        <div class="grouped inline fields">
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="crimeType">
+              <label>Property crime</label>
             </div>
           </div>
-          <div class="inline field">
-            <div class="ui toggle checkbox">
-              <input type="checkbox" checked="true" id="checkbox-intox">
-              <label>Intoxicated</label>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="crimeType">
+              <label>Substance crime</label>
             </div>
           </div>
-          <div class="inline field">
-            <div class="ui toggle checkbox">
-              <input type="checkbox" checked="true" id="checkbox-violent">
-              <label>Violent</label>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="crimeType" checked="">
+              <label>Violence crime</label>
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@
           </div>
           <div class="row">
             <div class="column">
-              Intoxicated
+              Substance
             </div>
             <div class="column">
               <div class="ui star rating" id="star-intox">
@@ -107,7 +107,7 @@
           </div>
           <div class="row">
             <div class="column">
-              Violent
+              Violence
             </div>
             <div class="column">
               <div class="ui star rating" id="star-violent">
@@ -150,11 +150,11 @@
               <td>4.8</td>
             </tr>
             <tr>
-              <td>Intoxicated</td>
+              <td>Substance</td>
               <td>3.4</td>
             </tr>
             <tr>
-              <td>Violent</td>
+              <td>Violence</td>
               <td>1.2</td>
             </tr>
           </tbody>
