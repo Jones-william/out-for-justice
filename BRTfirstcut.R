@@ -152,7 +152,7 @@ m1 <- gbm.step(
     learning.rate = 0.01,
     tree.complexity = 3,
     bag.fraction = 0.75)
-
+#save(m1, file = "violentModelSF.Rda")
 
 
 
@@ -164,7 +164,7 @@ m1 <- gbm.step(
 ndat <- expand.grid(X = cut_to_mean(levels(dat$Xcut)), 
     Y = cut_to_mean(levels(dat$Ycut)), 
     crimetype = "VIOLENT",
-    daytime = "2AM-10AM",
+    daytime = "6PM-2AM",
     superday = "Saturday")
 ndat$preds <- predict(m1, 
     newdata = ndat,
@@ -174,9 +174,9 @@ ndat$preds <- predict(m1,
 summary(ndat$preds)
 
 
-tiled_ALL_CRIMESs$fitted <- m1$fitted
-
-tiled_ALL_CRIMESs$resid <- tiled_ALL_CRIMESs$fitted - 
+#tiled_ALL_CRIMESs$fitted <- m1$fitted
+#
+#tiled_ALL_CRIMESs$resid <- tiled_ALL_CRIMESs$fitted - 
 
 
 #gbm.plot.fits(m1)
@@ -191,13 +191,221 @@ tiled_ALL_CRIMESs$resid <- tiled_ALL_CRIMESs$fitted -
 library("ggmap")
 library("ggplot2")
 g <- qmap("San Francisco", zoom = 12)  
-g +  geom_point(data=ndat[ndat$preds>1,], 
+g +  geom_point(data=ndat[ndat$preds>0.5,], 
         aes(x = X, y = Y, alpha = preds, size = preds)) +
     geom_point(aes(y= 37.775271, x = -122.398685, color = "red", size=8)) +
     annotate("text", label = "BayesImpact\nHackSite", 
         y= 37.775271 - .005, x = -122.398685 + .02,
         colour = "red") +
     ggtitle("Predicted Violent Crimes\n(Poisson GBRT)") + 
+    theme_bw() 
+ggsave("bla.pdf")
+
+
+##############################
+## PROPERTY CRIME
+
+tiledat <- expand.grid(
+    Xcut = levels(dat$Xcut),
+    Ycut = levels(dat$Ycut),
+    crimetype = "PROPERTY",
+    daytime = levels(dat$daytime),
+    superday = levels(dat$superday))
+
+# Now summarize, counting crimes:
+PROPERTYs <- dat %>% 
+    filter(crimetype == "PROPERTY") %>%
+    group_by(Xcut, Ycut, crimetype, daytime, superday) %>% 
+    summarise(sum_crime = n())
+
+
+levels(PROPERTYs$crimetype)
+levels(tiledat$crimetype)
+levels(tiled_PROPERTYs$daytime)
+#tiledat$crimetype <- as.character(tiledat$crimetype)
+
+tiled_PROPERTYs <- left_join(tiledat, PROPERTYs)
+summary(tiled_PROPERTYs$sum_crime)
+
+
+#tiled_PROPERTYs$sum_crime_q <- ecdf(tiled_PROPERTYs$sum_crime)(tiled_PROPERTYs$sum_crime)
+tiled_PROPERTYs$X <- cut_to_mean(tiled_PROPERTYs$Xcut)
+tiled_PROPERTYs$Y <- cut_to_mean(tiled_PROPERTYs$Ycut)
+
+####################################
+# Now fit GBRTs
+#install.packages('dismo')
+library('dismo')
+
+# Set missing values to zero
+tiled_PROPERTYs$sum_crime[is.na(tiled_PROPERTYs$sum_crime)] <- 0
+#tiled_PROPERTYs$crimetype = as.factor(tiled_PROPERTYs$crimetype)
+#tiled_PROPERTYs$daytime = as.factor(tiled_PROPERTYs$daytime)
+#tiled_PROPERTYs$superday = as.factor(tiled_PROPERTYs$superday)
+
+
+head(tiled_PROPERTYs)
+
+m2 <- gbm.step(
+    data=tiled_PROPERTYs, 
+    gbm.x = c(4:5, 7:8),
+    gbm.y = 6,
+    family = "poisson", 
+    n.folds = 5,
+    n.trees = 20,
+    learning.rate = 0.01,
+    tree.complexity = 3,
+    bag.fraction = 0.75)
+save(m2, file = "propertyModelSF.Rda")
+
+
+
+#ndat <- expand.grid(X = cut_to_mean(levels(dat$Xcut)), 
+#    Y = cut_to_mean(levels(dat$Ycut)), 
+#    crimetype = "PROPERTY",
+#    daytime = levels(tiled_PROPERTYs$daytime),
+#    superday = levels(tiled_PROPERTYs$superday))
+ndat <- expand.grid(X = cut_to_mean(levels(dat$Xcut)), 
+    Y = cut_to_mean(levels(dat$Ycut)), 
+    crimetype = "PROPERTY",
+    daytime = "6PM-2AM",
+    superday = "Saturday")
+ndat$preds <- predict(m2, 
+    newdata = ndat,
+    n.trees = 7620,
+    type = "response")
+
+summary(ndat$preds)
+
+
+#tiled_ALL_CRIMESs$fitted <- m1$fitted
+#
+#tiled_ALL_CRIMESs$resid <- tiled_ALL_CRIMESs$fitted - 
+
+
+#gbm.plot.fits(m1)
+#length(m1$fitted)
+#m1$cv.statistics
+
+
+###########################
+## Now plot results
+
+#install.packages("ggmap")
+library("ggmap")
+library("ggplot2")
+g <- qmap("San Francisco", zoom = 12)  
+g +  geom_point(data=ndat[ndat$preds>0.5,], 
+        aes(x = X, y = Y, alpha = preds, size = preds)) +
+    geom_point(aes(y= 37.775271, x = -122.398685, color = "red", size=8)) +
+    annotate("text", label = "BayesImpact\nHackSite", 
+        y= 37.775271 - .005, x = -122.398685 + .02,
+        colour = "red") +
+    ggtitle("Predicted Property Crimes\n(Poisson GBRT)") + 
+    theme_bw() 
+ggsave("bla.pdf")
+
+
+##############################
+## INTOX
+
+tiledat <- expand.grid(
+    Xcut = levels(dat$Xcut),
+    Ycut = levels(dat$Ycut),
+    crimetype = "INTOX",
+    daytime = levels(dat$daytime),
+    superday = levels(dat$superday))
+
+# Now summarize, counting crimes:
+INTOXs <- dat %>% 
+    filter(crimetype == "INTOX") %>%
+    group_by(Xcut, Ycut, crimetype, daytime, superday) %>% 
+    summarise(sum_crime = n())
+
+INTOXs$crimetype <- as.factor(INTOXs$crimetype)
+levels(INTOXs$crimetype)
+levels(tiledat$crimetype)
+levels(tiled_INTOXs$daytime)
+#tiledat$crimetype <- as.character(tiledat$crimetype)
+
+tiled_INTOXs <- left_join(tiledat, INTOXs)
+summary(tiled_INTOXs$sum_crime)
+
+
+#tiled_INTOXs$sum_crime_q <- ecdf(tiled_INTOXs$sum_crime)(tiled_INTOXs$sum_crime)
+tiled_INTOXs$X <- cut_to_mean(tiled_INTOXs$Xcut)
+tiled_INTOXs$Y <- cut_to_mean(tiled_INTOXs$Ycut)
+
+####################################
+# Now fit GBRTs
+#install.packages('dismo')
+library('dismo')
+
+# Set missing values to zero
+tiled_INTOXs$sum_crime[is.na(tiled_INTOXs$sum_crime)] <- 0
+#tiled_INTOXs$crimetype = as.factor(tiled_INTOXs$crimetype)
+#tiled_INTOXs$daytime = as.factor(tiled_INTOXs$daytime)
+#tiled_INTOXs$superday = as.factor(tiled_INTOXs$superday)
+
+
+head(tiled_INTOXs)
+
+m3 <- gbm.step(
+    data=tiled_INTOXs, 
+    gbm.x = c(4:5, 7:8),
+    gbm.y = 6,
+    family = "poisson", 
+    n.folds = 5,
+    n.trees = 20,
+    learning.rate = 0.01,
+    tree.complexity = 3,
+    bag.fraction = 0.75)
+save(m3, file = "intoxModelSF.Rda")
+# scp solomon@dev1706.prn1.facebook.com:/home/solomon/sftp/out-for-justice/intoxModelSF.Rda /Users/solomon/Documents/workspace/BayesImpact/intoxModelSF.Rda
+
+
+#ndat <- expand.grid(X = cut_to_mean(levels(dat$Xcut)), 
+#    Y = cut_to_mean(levels(dat$Ycut)), 
+#    crimetype = "INTOX",
+#    daytime = levels(tiled_INTOXs$daytime),
+#    superday = levels(tiled_INTOXs$superday))
+ndat <- expand.grid(X = cut_to_mean(levels(dat$Xcut)), 
+    Y = cut_to_mean(levels(dat$Ycut)), 
+    crimetype = "INTOX",
+    daytime = "6PM-2AM",
+    superday = "Saturday")
+ndat$preds <- predict(m3, 
+    newdata = ndat,
+    n.trees = 7620,
+    type = "response")
+
+summary(ndat$preds)
+
+
+#tiled_ALL_CRIMESs$fitted <- m1$fitted
+#
+#tiled_ALL_CRIMESs$resid <- tiled_ALL_CRIMESs$fitted - 
+
+
+#gbm.plot.fits(m1)
+#length(m1$fitted)
+#m1$cv.statistics
+
+
+###########################
+## Now plot results
+
+#install.packages("ggmap")
+library("ggmap")
+library("ggplot2")
+g <- qmap("San Francisco", zoom = 12)  
+g +  geom_point(data=ndat[ndat$preds>0.5,], 
+        aes(x = X, y = Y, alpha = preds, size = preds)) +
+    geom_point(aes(y= 37.775271, x = -122.398685, color = "red", size=8)) +
+    annotate("text", label = "BayesImpact\nHackSite", 
+        y= 37.775271 - .005, x = -122.398685 + .02,
+        colour = "red") +
+    ggtitle("Predicted Property Crimes\n(Poisson GBRT)") + 
     theme_bw() 
 ggsave("bla.pdf")
 
