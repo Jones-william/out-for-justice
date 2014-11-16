@@ -16,44 +16,150 @@
   </nav>
 
   <div class="ui content grid">
-    <div class="four wide column" id="form-column">
-      <div class="ui form">
-        <div class="ui block">
-          <div class="ui selection dropdown">
-            <input type="hidden" name="crimeType">
-            <div class="default text">Crime Type</div>
-            <i class="dropdown icon"></i>
-            <div class="menu">
-              <div class="item" data-value="0">Property</div>
-              <div class="item" data-value="1">Intox</div>
-              <div class="item" data-value="2">Violent</div>
-            </div>
+    <div class="four wide column" id="form-column" style="overflow-y:scroll;">
+      <!-- PREDICT -->
+      <div class="ui form segment" id="form-predict">
+        <div class="ui selection dropdown">
+          <input type="hidden" name="dayOfWeek">
+          <div class="default text">Weekend</div>
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item" data-value="weekday">Weekday</div>
+            <div class="item active" data-value="weekend">Weekend</div>
+          </div>
+        </div>
+        <div class="ui selection dropdown">
+          <input type="hidden" name="timeOfDay">
+          <div class="default text">Party time</div>
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item" data-value="party">Party time</div>
+            <div class="item" data-value="work">Working time</div>
+            <div class="item" data-value="sleep">Sleeping time</div>
           </div>
         </div>
         <div class="ui block">
-          <div class="ui selection dropdown">
-            <input type="hidden" name="dayOfWeek">
-            <div class="default text">Day</div>
-            <i class="dropdown icon"></i>
-            <div class="menu">
-              <div class="item" data-value="0">Weekday</div>
-              <div class="item" data-value="1">Weekend</div>
+          <div class="inline field">
+            <div class="ui toggle checkbox">
+              <input type="checkbox" checked="true" id="checkbox-property">
+              <label>Property</label>
+            </div>
+          </div>
+          <div class="inline field">
+            <div class="ui toggle checkbox">
+              <input type="checkbox" checked="true" id="checkbox-intox">
+              <label>Intoxicated</label>
+            </div>
+          </div>
+          <div class="inline field">
+            <div class="ui toggle checkbox">
+              <input type="checkbox" checked="true" id="checkbox-violent">
+              <label>Violent</label>
             </div>
           </div>
         </div>
-        <div class="ui block">
-          <div class="ui selection dropdown">
-            <input type="hidden" name="timeOfDay">
-            <div class="default text">Time</div>
-            <i class="dropdown icon"></i>
-            <div class="menu">
-              <div class="item" data-value="0">Party time</div>
-              <div class="item" data-value="1">Working time</div>
-              <div class="item" data-value="2">Sleeping time</div>
+        <div class="ui teal submit button" id="predict">
+          PREDICT
+        </div>
+      </div>
+      <!-- EVALUATE -->
+      <div class="ui form segment" id="form-evaluate">
+        <div class="ui action input">
+          <input type="text" placeholder="# patrol cars">
+          <div class="ui icon button">
+            <i class="refresh icon"></i>
+          </div>
+        </div>
+        patrol cars
+        <h4>Importance</h4>
+        <div class="ui two column grid">
+          <div class="row">
+            <div class="column">
+              Property
+            </div>
+            <div class="column">
+              <div class="ui star rating" id="star-property">
+                <i class="icon"></i>
+                <i class="icon"></i>
+                <i class="icon"></i>
+                <i class="icon"></i>
+                <i class="icon"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              Intoxicated
+            </div>
+            <div class="column">
+              <div class="ui star rating" id="star-intox">
+                <i class="icon"></i>
+                <i class="icon"></i>
+                <i class="icon"></i>
+                <i class="icon"></i>
+                <i class="icon"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              Violent
+            </div>
+            <div class="column">
+              <div class="ui star rating" id="star-violent">
+                <i class="icon"></i>
+                <i class="icon"></i>
+                <i class="icon"></i>
+                <i class="icon"></i>
+                <i class="icon"></i>
+              </div>
             </div>
           </div>
         </div>
-        <div class="ui teal submit button" id="visualize-submit">Visualize</div>
+        <div class="ui teal submit button" id="evaluate">
+          EVALUATE
+        </div>
+      </div>
+      <!-- RESULT -->
+      <div class="ui form segment" id="form-result">
+        <div>
+          <h2 class="ui header">
+            <i class="large thumbs up outline icon"></i>
+            <div class="content">
+            <div class="sub header">Weighted Response Time</div>
+            3.89
+            </div>
+          </h2>
+        </div>
+        <table class="ui small table segment">
+          <col align="left">
+          <col align="center">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Avg response time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Property</td>
+              <td>4.8</td>
+            </tr>
+            <tr>
+              <td>Intoxicated</td>
+              <td>3.4</td>
+            </tr>
+            <tr>
+              <td>Violent</td>
+              <td>1.2</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="ui right floated buttons" style="padding-top: 8px;">
+          <div class="ui button">RESET</div>
+          <div class="or"></div>
+          <div class="ui teal button">STEP</div>
+        </div>
       </div>
     </div>
     <div class="twelve wide column" id="map-column">

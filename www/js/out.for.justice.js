@@ -10,20 +10,11 @@ function expandMap() {
 $(document)
   .ready(function() {
     $('.ui.selection.dropdown').dropdown();
-
-    // $('.ui.form')
-    //   .form({
-    //     firstName: {
-    //       identifier  : 'first-name',
-    //       rules: [
-    //         {
-    //           type   : 'empty',
-    //           prompt : 'Please enter your first name'
-    //         }
-    //       ]
-    //     },
-    //   })
-    // ;
+    $('.ui.checkbox').checkbox();
+    $('.ui.star.rating')
+      .rating('enable')
+      .rating('set rating', 3);
+    //$('.enable.button').on('click', function());
   })
 ;
 
@@ -97,7 +88,7 @@ function renderPoints(dat, target, classStr) {
 
   var points = target.selectAll('.' + classStr)
     .data(dat.map(function(d) {
-      return map.latLngToLayerPoint([d.coordinates[1], d.coordinates[0]]);
+      return map.latLngToLayerPoint([d.coordinates[0], d.coordinates[1]]);
     }));
 
   points.enter().append('circle')
@@ -112,7 +103,7 @@ function renderCars(dat) {
 
   var groups = layers.pin.selectAll('.gCar')
     .data(dat.map(function(d) {
-      return map.latLngToLayerPoint([d[1], d[0]]);
+      return map.latLngToLayerPoint([d[0], d[1]]);
     }));
 
   groups.enter().append('g')
@@ -149,15 +140,32 @@ function update() {
   renderCars(cars);
 }
 
+function predict() {
+  var form = $('#form-predict');
+
+}
+
+function evaluate() {
+
+}
+
+function reset() {
+
+}
+
+function step() {
+
+}
+
 /* TEMP */
 
 var data;
-var cars = [[-122.395569, 37.776317], [-122.4079037, 37.7483385]];
+var cars = [[37.776317,-122.395569], [37.7483385,-122.4079037]];
 
 d3.json(HEATMAP_API, function(error, json){
   data = json.geometries;
-  var lonExtent = d3.extent(data, function(d) { return d.coordinates[1]; });
   var latExtent = d3.extent(data, function(d) { return d.coordinates[0]; });
+  var lonExtent = d3.extent(data, function(d) { return d.coordinates[1]; });
 
   init();
   renderPoints(data, layers.heatmap, 'point');
