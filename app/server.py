@@ -47,7 +47,6 @@ class HeatMapHandler(BaseHandler):
             geoms.append(Point([node['data'].lon, node['data'].lat]))
         geo = GeometryCollection(geoms)
 
-        #geo = MultiPoint([(-155.52, 19.61), (-156.22, 20.74), (-157.97, 21.46)])
         return self.write_json(geo)
 
 if __name__ == '__main__':
@@ -62,9 +61,10 @@ if __name__ == '__main__':
     with open(options.conf) as f:
         config = json.load(f)
 
-
     with open(options.osm) as f:
         graph = read_osm(f)
+
+    print(len(graph.node))
 
     config['static_path'] = os.path.join(
         os.path.abspath(os.path.curdir),

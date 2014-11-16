@@ -1,0 +1,1910 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2014-11-15T23:27:01Z"/>
+
+  <node id="65281582" lat="37.7487455" lon="-122.4067440" version="8" timestamp="2010-06-17T19:48:06Z" changeset="5011590" uid="14293" user="KindredCoda"/>
+  <node id="65287952" lat="37.7459644" lon="-122.4178370" version="3" timestamp="2013-05-23T20:56:11Z" changeset="16258076" uid="14293" user="KindredCoda"/>
+  <node id="65288811" lat="37.7513209" lon="-122.4071699" version="5" timestamp="2012-03-17T02:51:36Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65288813" lat="37.7512669" lon="-122.4080611" version="5" timestamp="2012-03-17T02:51:36Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65288815" lat="37.7512099" lon="-122.4090020" version="5" timestamp="2012-03-17T02:51:36Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65288817" lat="37.7511520" lon="-122.4099562" version="5" timestamp="2014-02-10T20:47:42Z" changeset="20492807" uid="1829683" user="Luis36995"/>
+  <node id="65288819" lat="37.7510990" lon="-122.4108337" version="4" timestamp="2012-03-17T02:51:36Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65288821" lat="37.7510425" lon="-122.4117672" version="5" timestamp="2012-03-17T02:51:36Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65288827" lat="37.7509762" lon="-122.4128620" version="6" timestamp="2013-05-31T21:17:10Z" changeset="16371095" uid="1149057" user="DKNOTT">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="65288829" lat="37.7509429" lon="-122.4133840" version="5" timestamp="2014-03-27T19:31:04Z" changeset="21351311" uid="1829683" user="Luis36995"/>
+  <node id="65288832" lat="37.7509102" lon="-122.4139499" version="7" timestamp="2013-05-31T21:17:10Z" changeset="16371095" uid="1149057" user="DKNOTT">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="65288839" lat="37.7508444" lon="-122.4150359" version="5" timestamp="2013-05-31T21:16:41Z" changeset="16371086" uid="1149057" user="DKNOTT">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="65288844" lat="37.7507783" lon="-122.4161290" version="7" timestamp="2012-11-11T00:08:18Z" changeset="13827712" uid="481533" user="dbaron">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65288845" lat="37.7507448" lon="-122.4166814" version="6" timestamp="2013-09-11T17:29:08Z" changeset="17786961" uid="564585" user="wegavision"/>
+  <node id="65288847" lat="37.7507122" lon="-122.4172209" version="5" timestamp="2012-03-17T02:51:37Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65288850" lat="37.7506461" lon="-122.4183106" version="6" timestamp="2012-10-17T00:49:56Z" changeset="13526117" uid="481533" user="dbaron">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65290294" lat="37.7630381" lon="-122.4102625" version="5" timestamp="2012-03-17T03:33:36Z" changeset="11004366" uid="14293" user="KindredCoda"/>
+  <node id="65290296" lat="37.7617576" lon="-122.4101411" version="4" timestamp="2012-03-17T02:51:30Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65290299" lat="37.7604836" lon="-122.4100204" version="4" timestamp="2012-03-17T02:51:30Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65290302" lat="37.7596073" lon="-122.4099373" version="5" timestamp="2012-03-17T02:51:30Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65290305" lat="37.7591995" lon="-122.4097705" version="4" timestamp="2011-04-27T00:16:04Z" changeset="7980803" uid="14293" user="KindredCoda"/>
+  <node id="65290307" lat="37.7591304" lon="-122.4097610" version="4" timestamp="2012-03-17T02:51:30Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65290312" lat="37.7577235" lon="-122.4096261" version="4" timestamp="2012-03-17T02:51:30Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65290314" lat="37.7576026" lon="-122.4096146" version="5" timestamp="2014-04-18T23:25:36Z" changeset="21783125" uid="14293" user="KindredCoda"/>
+  <node id="65290322" lat="37.7559960" lon="-122.4094606" version="7" timestamp="2012-04-12T20:36:24Z" changeset="11280655" uid="28775" user="StellanL">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65290327" lat="37.7544040" lon="-122.4092664" version="5" timestamp="2014-02-14T10:50:34Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="65290335" lat="37.7528041" lon="-122.4091367" version="8" timestamp="2014-02-14T10:50:34Z" changeset="20556569" uid="933797" user="oba510">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65290336" lat="37.7495996" lon="-122.4088477" version="4" timestamp="2012-03-17T02:51:30Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65290337" lat="37.7483098" lon="-122.4087091" version="10" timestamp="2014-04-20T04:26:09Z" changeset="21809656" uid="933797" user="oba510">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65290340" lat="37.7479679" lon="-122.4086804" version="5" timestamp="2014-04-20T04:26:09Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="65290960" lat="37.7629823" lon="-122.4112193" version="6" timestamp="2014-02-14T10:50:34Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="65292899" lat="37.7463230" lon="-122.4105650" version="2" timestamp="2009-08-10T21:51:43Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65292901" lat="37.7464226" lon="-122.4090527" version="3" timestamp="2014-04-20T04:26:09Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="65292903" lat="37.7464313" lon="-122.4089207" version="3" timestamp="2014-04-20T04:26:09Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="65292906" lat="37.7463440" lon="-122.4087600" version="2" timestamp="2009-08-10T21:51:43Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65292908" lat="37.7463070" lon="-122.4085430" version="2" timestamp="2009-08-10T21:51:43Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65292910" lat="37.7463450" lon="-122.4084020" version="2" timestamp="2009-08-10T21:51:44Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65292912" lat="37.7464650" lon="-122.4081250" version="2" timestamp="2009-08-10T21:51:44Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65292916" lat="37.7469320" lon="-122.4070500" version="2" timestamp="2009-08-10T21:51:44Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65292920" lat="37.7465950" lon="-122.4064960" version="3" timestamp="2009-10-25T04:05:28Z" changeset="2942982" uid="28775" user="StellanL">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="65292926" lat="37.7462440" lon="-122.4059170" version="2" timestamp="2009-08-10T21:51:44Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65292928" lat="37.7456350" lon="-122.4060240" version="2" timestamp="2009-08-10T21:51:44Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65292932" lat="37.7453150" lon="-122.4063350" version="2" timestamp="2009-08-10T21:51:44Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65292935" lat="37.7452430" lon="-122.4064320" version="2" timestamp="2009-08-10T21:51:44Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65292937" lat="37.7451710" lon="-122.4065300" version="2" timestamp="2009-08-10T21:51:44Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65292939" lat="37.7449890" lon="-122.4068260" version="2" timestamp="2009-08-10T21:51:44Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65293544" lat="37.7604248" lon="-122.4109731" version="6" timestamp="2014-02-14T10:50:34Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="65293569" lat="37.7604978" lon="-122.4148505" version="5" timestamp="2014-02-14T10:50:34Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="65293573" lat="37.7604315" lon="-122.4159537" version="3" timestamp="2012-03-17T02:51:40Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65293575" lat="37.7603638" lon="-122.4170342" version="6" timestamp="2014-03-17T04:56:41Z" changeset="21149045" uid="933797" user="oba510"/>
+  <node id="65296192" lat="37.7687136" lon="-122.4117781" version="5" timestamp="2014-02-10T20:47:42Z" changeset="20492807" uid="1829683" user="Luis36995"/>
+  <node id="65296244" lat="37.7573704" lon="-122.4134534" version="6" timestamp="2014-04-18T23:25:36Z" changeset="21783125" uid="14293" user="KindredCoda"/>
+  <node id="65296247" lat="37.7557723" lon="-122.4133044" version="6" timestamp="2014-02-14T10:50:34Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="65296249" lat="37.7541635" lon="-122.4131664" version="4" timestamp="2012-03-17T02:51:34Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65296251" lat="37.7525712" lon="-122.4130143" version="5" timestamp="2012-03-17T02:51:34Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65296254" lat="37.7493687" lon="-122.4127085" version="4" timestamp="2012-03-17T02:51:34Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65296261" lat="37.7468250" lon="-122.4125470" version="2" timestamp="2009-08-10T21:52:46Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65296262" lat="37.7451630" lon="-122.4123870" version="2" timestamp="2009-08-10T21:52:46Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65296264" lat="37.7446134" lon="-122.4123341" version="3" timestamp="2014-03-31T13:01:09Z" changeset="21419447" uid="1829683" user="Luis36995"/>
+  <node id="65298409" lat="37.7467660" lon="-122.4143330" version="2" timestamp="2009-08-10T21:53:38Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65298413" lat="37.7450950" lon="-122.4141730" version="2" timestamp="2009-08-10T21:53:38Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65298417" lat="37.7441840" lon="-122.4140860" version="2" timestamp="2009-08-10T21:53:38Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65298882" lat="37.7475130" lon="-122.4161480" version="4" timestamp="2014-05-02T17:10:44Z" changeset="22089783" uid="510836" user="Rub21"/>
+  <node id="65298886" lat="37.7471512" lon="-122.4161636" version="4" timestamp="2014-08-13T01:08:21Z" changeset="24714082" uid="14293" user="KindredCoda"/>
+  <node id="65299217" lat="37.7684064" lon="-122.4178170" version="6" timestamp="2012-03-17T02:51:31Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65302160" lat="37.7576594" lon="-122.4086742" version="5" timestamp="2014-04-18T23:25:36Z" changeset="21783125" uid="14293" user="KindredCoda"/>
+  <node id="65302164" lat="37.7575470" lon="-122.4105338" version="6" timestamp="2014-04-18T23:25:36Z" changeset="21783125" uid="14293" user="KindredCoda"/>
+  <node id="65302166" lat="37.7574932" lon="-122.4114232" version="5" timestamp="2014-04-18T23:25:36Z" changeset="21783125" uid="14293" user="KindredCoda"/>
+  <node id="65302176" lat="37.7573042" lon="-122.4145476" version="7" timestamp="2014-04-18T23:25:36Z" changeset="21783125" uid="14293" user="KindredCoda">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="source" v="data.sfgov.org"/>
+  </node>
+  <node id="65302180" lat="37.7572377" lon="-122.4156483" version="5" timestamp="2014-04-18T23:25:36Z" changeset="21783125" uid="14293" user="KindredCoda"/>
+  <node id="65302182" lat="37.7571724" lon="-122.4167281" version="8" timestamp="2014-04-18T23:25:36Z" changeset="21783125" uid="14293" user="KindredCoda">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="source" v="data.sfgov.org"/>
+  </node>
+  <node id="65303911" lat="37.7681133" lon="-122.4117159" version="4" timestamp="2014-02-10T20:47:43Z" changeset="20492807" uid="1829683" user="Luis36995"/>
+  <node id="65308740" lat="37.7545760" lon="-122.4065606" version="6" timestamp="2013-10-07T21:23:20Z" changeset="18237765" uid="119881" user="Clorox">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65309905" lat="37.7466560" lon="-122.4159819" version="4" timestamp="2014-08-12T23:29:45Z" changeset="24713200" uid="14293" user="KindredCoda"/>
+  <node id="65309912" lat="37.7466487" lon="-122.4158936" version="3" timestamp="2014-08-12T23:29:45Z" changeset="24713200" uid="14293" user="KindredCoda"/>
+  <node id="65309914" lat="37.7465479" lon="-122.4150881" version="4" timestamp="2014-08-12T23:29:45Z" changeset="24713200" uid="14293" user="KindredCoda"/>
+  <node id="65317363" lat="37.7642587" lon="-122.4113313" version="6" timestamp="2014-02-14T10:50:34Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="65317378" lat="37.7636340" lon="-122.4162492" version="6" timestamp="2014-04-26T23:38:39Z" changeset="21966232" uid="1192763" user="mlawren5">
+    <tag k="crossing" v="zebra"/>
+    <tag k="highway" v="stop"/>
+    <tag k="tactile_paving" v="yes/both"/>
+  </node>
+  <node id="65317380" lat="37.7635724" lon="-122.4173398" version="7" timestamp="2014-02-02T06:45:38Z" changeset="20328911" uid="933797" user="oba510">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65317599" lat="37.7589073" lon="-122.4147004" version="7" timestamp="2014-02-14T10:50:34Z" changeset="20556569" uid="933797" user="oba510">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="source" v="data.sfgov.org"/>
+  </node>
+  <node id="65317601" lat="37.7557072" lon="-122.4144003" version="7" timestamp="2014-02-14T10:50:34Z" changeset="20556569" uid="933797" user="oba510">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65317603" lat="37.7540978" lon="-122.4142545" version="6" timestamp="2013-10-07T21:23:22Z" changeset="18237765" uid="119881" user="Clorox">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="source" v="data.sfgov.org"/>
+  </node>
+  <node id="65317606" lat="37.7525057" lon="-122.4141024" version="6" timestamp="2012-11-11T00:08:18Z" changeset="13827712" uid="481533" user="dbaron">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65317609" lat="37.7493025" lon="-122.4137963" version="5" timestamp="2013-05-31T21:16:23Z" changeset="16371080" uid="1149057" user="DKNOTT">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="65317612" lat="37.7482144" lon="-122.4136747" version="14" timestamp="2013-07-29T01:00:33Z" changeset="17132959" uid="14293" user="KindredCoda">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65317614" lat="37.7471710" lon="-122.4135710" version="3" timestamp="2009-11-19T03:34:53Z" changeset="3156706" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65317616" lat="37.7467751" lon="-122.4135351" version="4" timestamp="2009-11-19T03:34:54Z" changeset="3156706" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65317618" lat="37.7451490" lon="-122.4133760" version="3" timestamp="2009-11-19T03:34:54Z" changeset="3156706" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65317623" lat="37.7441500" lon="-122.4132800" version="3" timestamp="2009-11-19T03:34:54Z" changeset="3156706" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65317690" lat="37.7468810" lon="-122.4116100" version="2" timestamp="2009-11-19T03:34:54Z" changeset="3156706" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65317692" lat="37.7452385" lon="-122.4114298" version="4" timestamp="2009-11-19T03:34:54Z" changeset="3156706" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65317793" lat="37.7542300" lon="-122.4120470" version="3" timestamp="2009-08-10T21:58:52Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65317795" lat="37.7526377" lon="-122.4118790" version="7" timestamp="2014-02-14T10:50:34Z" changeset="20556569" uid="933797" user="oba510">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="source" v="data.sfgov.org"/>
+  </node>
+  <node id="65317798" lat="37.7482609" lon="-122.4114998" version="13" timestamp="2013-07-29T01:00:33Z" changeset="17132959" uid="14293" user="KindredCoda">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65317799" lat="37.7472975" lon="-122.4114049" version="6" timestamp="2012-03-17T02:51:38Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65322282" lat="37.7529136" lon="-122.4073218" version="5" timestamp="2012-03-17T02:51:40Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65322284" lat="37.7528599" lon="-122.4082139" version="5" timestamp="2012-03-17T02:51:40Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65322285" lat="37.7527499" lon="-122.4100758" version="7" timestamp="2014-02-14T10:50:34Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="65322294" lat="37.7526974" lon="-122.4109704" version="6" timestamp="2014-02-14T10:50:34Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="65322298" lat="37.7525409" lon="-122.4135173" version="4" timestamp="2011-03-31T21:30:17Z" changeset="7730410" uid="14293" user="KindredCoda"/>
+  <node id="65322299" lat="37.7524404" lon="-122.4151887" version="5" timestamp="2012-03-17T02:51:41Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65322300" lat="37.7523747" lon="-122.4162819" version="7" timestamp="2012-11-11T00:08:18Z" changeset="13827712" uid="481533" user="dbaron">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65322306" lat="37.7523090" lon="-122.4173739" version="6" timestamp="2012-11-11T00:08:18Z" changeset="13827712" uid="481533" user="dbaron">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65322310" lat="37.7522435" lon="-122.4184634" version="6" timestamp="2012-03-17T02:51:41Z" changeset="11004273" uid="14293" user="KindredCoda">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65324841" lat="37.7620369" lon="-122.4160992" version="7" timestamp="2014-03-17T04:56:41Z" changeset="21149045" uid="933797" user="oba510"/>
+  <node id="65324843" lat="37.7619702" lon="-122.4171887" version="7" timestamp="2014-03-17T04:56:41Z" changeset="21149045" uid="933797" user="oba510"/>
+  <node id="65324938" lat="37.7617041" lon="-122.4110931" version="6" timestamp="2014-02-14T10:50:35Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="65327092" lat="37.7469257" lon="-122.4084439" version="3" timestamp="2014-04-20T04:26:09Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="65327095" lat="37.7466047" lon="-122.4082221" version="3" timestamp="2009-08-10T22:01:41Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65327971" lat="37.7493366" lon="-122.4132328" version="3" timestamp="2014-03-27T19:31:04Z" changeset="21351311" uid="1829683" user="Luis36995"/>
+  <node id="65328976" lat="37.7668408" lon="-122.4115838" version="4" timestamp="2014-02-10T20:47:43Z" changeset="20492807" uid="1829683" user="Luis36995"/>
+  <node id="65328978" lat="37.7655520" lon="-122.4114699" version="6" timestamp="2014-02-14T10:50:35Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="65328981" lat="37.7592241" lon="-122.4108609" version="5" timestamp="2014-02-14T10:50:35Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="65328983" lat="37.7591424" lon="-122.4107748" version="6" timestamp="2014-02-14T10:50:35Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="65328985" lat="37.7590593" lon="-122.4106806" version="5" timestamp="2014-02-14T10:50:35Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="65328989" lat="37.7559488" lon="-122.4103830" version="7" timestamp="2014-02-14T10:50:35Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="65328991" lat="37.7543493" lon="-122.4102272" version="6" timestamp="2014-02-14T10:50:35Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="65328992" lat="37.7495423" lon="-122.4097893" version="4" timestamp="2014-02-10T20:47:43Z" changeset="20492807" uid="1829683" user="Luis36995"/>
+  <node id="65328994" lat="37.7483001" lon="-122.4096620" version="7" timestamp="2013-07-29T01:00:33Z" changeset="17132959" uid="14293" user="KindredCoda"/>
+  <node id="65328997" lat="37.7476006" lon="-122.4094918" version="5" timestamp="2014-04-20T04:26:09Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="65329002" lat="37.7475644" lon="-122.4094069" version="3" timestamp="2014-04-20T04:26:09Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="65329004" lat="37.7467763" lon="-122.4088870" version="4" timestamp="2014-04-20T04:26:09Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="65330451" lat="37.7590891" lon="-122.4115973" version="5" timestamp="2012-03-17T02:51:40Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65330452" lat="37.7558912" lon="-122.4112767" version="6" timestamp="2014-02-14T10:50:35Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="65330454" lat="37.7542945" lon="-122.4111260" version="5" timestamp="2014-02-14T10:50:35Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="65330456" lat="37.7494887" lon="-122.4106798" version="3" timestamp="2012-03-17T02:51:40Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65330458" lat="37.7482809" lon="-122.4105635" version="8" timestamp="2013-07-29T01:00:34Z" changeset="17132959" uid="14293" user="KindredCoda">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65330460" lat="37.7474346" lon="-122.4104835" version="3" timestamp="2012-03-17T02:51:40Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65330462" lat="37.7473588" lon="-122.4104795" version="3" timestamp="2009-08-10T22:02:52Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65330467" lat="37.7469719" lon="-122.4106254" version="4" timestamp="2009-08-10T22:02:52Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65332307" lat="37.7592518" lon="-122.4089045" version="4" timestamp="2011-04-27T00:16:05Z" changeset="7980803" uid="14293" user="KindredCoda"/>
+  <node id="65332309" lat="37.7591838" lon="-122.4088204" version="4" timestamp="2012-03-17T02:51:32Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65332311" lat="37.7560552" lon="-122.4085028" version="6" timestamp="2014-02-14T10:50:35Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="65332314" lat="37.7544508" lon="-122.4083475" version="5" timestamp="2014-02-14T10:50:35Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="65332316" lat="37.7496631" lon="-122.4079073" version="5" timestamp="2012-03-17T02:51:32Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65332321" lat="37.7483385" lon="-122.4079037" version="6" timestamp="2014-04-20T04:26:09Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="65332323" lat="37.7482571" lon="-122.4078488" version="4" timestamp="2014-04-20T04:26:09Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="65332325" lat="37.7474406" lon="-122.4072797" version="4" timestamp="2014-04-20T04:26:09Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="65334190" lat="37.7668039" lon="-122.4176635" version="5" timestamp="2012-03-17T02:51:38Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65334191" lat="37.7657508" lon="-122.4175627" version="5" timestamp="2012-03-17T02:51:39Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65334193" lat="37.7651935" lon="-122.4175038" version="8" timestamp="2014-11-15T10:02:01Z" changeset="26795042" uid="933797" user="oba510">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65334198" lat="37.7555717" lon="-122.4165729" version="8" timestamp="2014-02-14T10:50:35Z" changeset="20556569" uid="933797" user="oba510">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65334199" lat="37.7539667" lon="-122.4164343" version="6" timestamp="2012-11-11T00:08:18Z" changeset="13827712" uid="481533" user="dbaron">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65334202" lat="37.7491708" lon="-122.4159751" version="6" timestamp="2013-05-31T21:16:23Z" changeset="16371080" uid="1149057" user="DKNOTT">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65335543" lat="37.7472169" lon="-122.4137117" version="3" timestamp="2014-08-13T01:08:21Z" changeset="24714082" uid="14293" user="KindredCoda"/>
+  <node id="65335545" lat="37.7473927" lon="-122.4099817" version="4" timestamp="2009-08-10T22:04:12Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65335548" lat="37.7482330" lon="-122.4080210" version="3" timestamp="2009-08-10T22:04:12Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65335559" lat="37.7471280" lon="-122.4105482" version="4" timestamp="2009-08-10T22:04:12Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65345337" lat="37.7652589" lon="-122.4164113" version="6" timestamp="2014-11-15T10:02:01Z" changeset="26795042" uid="933797" user="oba510"/>
+  <node id="65348841" lat="37.7481875" lon="-122.4149365" version="11" timestamp="2013-07-29T01:00:32Z" changeset="17132959" uid="14293" user="KindredCoda">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65348902" lat="37.7483166" lon="-122.4080426" version="4" timestamp="2009-08-10T22:08:12Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65348994" lat="37.7485313" lon="-122.4076398" version="5" timestamp="2010-06-17T19:47:50Z" changeset="5011590" uid="14293" user="KindredCoda"/>
+  <node id="65348996" lat="37.7484305" lon="-122.4079667" version="6" timestamp="2009-08-10T22:08:13Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65354522" lat="37.7497165" lon="-122.4069150" version="4" timestamp="2012-03-17T02:51:37Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65354527" lat="37.7492362" lon="-122.4148819" version="4" timestamp="2013-05-31T21:16:41Z" changeset="16371086" uid="1149057" user="DKNOTT">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="65354529" lat="37.7491059" lon="-122.4170669" version="4" timestamp="2012-03-17T02:51:38Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65354532" lat="37.7490402" lon="-122.4181489" version="6" timestamp="2013-07-29T01:00:33Z" changeset="17132959" uid="14293" user="KindredCoda">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65358927" lat="37.7545045" lon="-122.4074736" version="4" timestamp="2012-03-17T02:51:39Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65359041" lat="37.7540327" lon="-122.4153411" version="4" timestamp="2012-03-17T02:51:39Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65359043" lat="37.7539008" lon="-122.4175265" version="4" timestamp="2012-03-17T02:51:39Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65359046" lat="37.7538357" lon="-122.4186158" version="5" timestamp="2012-10-20T03:25:54Z" changeset="13563523" uid="481533" user="dbaron">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="65361214" lat="37.7466700" lon="-122.4090723" version="3" timestamp="2014-04-20T04:26:09Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="65361437" lat="37.7588350" lon="-122.4158009" version="5" timestamp="2012-03-17T02:51:32Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65365910" lat="37.7668697" lon="-122.4165702" version="4" timestamp="2012-03-17T02:51:34Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65365911" lat="37.7556327" lon="-122.4154943" version="5" timestamp="2012-04-12T20:36:26Z" changeset="11280655" uid="28775" user="StellanL"/>
+  <node id="65365921" lat="37.7488513" lon="-122.4148451" version="3" timestamp="2012-03-17T02:51:35Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65365923" lat="37.7487788" lon="-122.4149919" version="3" timestamp="2012-03-17T02:51:35Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="65371442" lat="37.7466054" lon="-122.4149856" version="4" timestamp="2009-08-10T22:12:51Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65371443" lat="37.7467280" lon="-122.4149580" version="3" timestamp="2009-08-10T22:12:51Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="65371447" lat="37.7468080" lon="-122.4136620" version="2" timestamp="2009-08-10T22:12:51Z" changeset="2102778" uid="147510" user="woodpeck_fixbot"/>
+  <node id="258886222" lat="37.7482127" lon="-122.4182042" version="23" timestamp="2013-07-29T01:00:33Z" changeset="17132959" uid="14293" user="KindredCoda">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="258886223" lat="37.7482819" lon="-122.4149450" version="18" timestamp="2013-07-29T01:00:33Z" changeset="17132959" uid="14293" user="KindredCoda">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="258886225" lat="37.7483939" lon="-122.4096701" version="20" timestamp="2014-02-10T20:47:42Z" changeset="20492807" uid="1829683" user="Luis36995"/>
+  <node id="258886228" lat="37.7483548" lon="-122.4115088" version="20" timestamp="2013-07-29T01:00:33Z" changeset="17132959" uid="14293" user="KindredCoda">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="258886230" lat="37.7484800" lon="-122.4077938" version="18" timestamp="2012-03-17T02:51:35Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="258886234" lat="37.7483746" lon="-122.4105726" version="21" timestamp="2013-07-29T01:00:33Z" changeset="17132959" uid="14293" user="KindredCoda">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="258886236" lat="37.7484136" lon="-122.4087340" version="27" timestamp="2013-07-29T01:00:33Z" changeset="17132959" uid="14293" user="KindredCoda">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="258886237" lat="37.7487147" lon="-122.4070953" version="22" timestamp="2010-06-17T19:47:46Z" changeset="5011590" uid="14293" user="KindredCoda"/>
+  <node id="261510709" lat="37.7545817" lon="-122.4064527" version="3" timestamp="2013-10-07T21:23:18Z" changeset="18237765" uid="119881" user="Clorox">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="source" v="data.sfgov.org"/>
+  </node>
+  <node id="265666676" lat="37.7488046" lon="-122.4137487" version="7" timestamp="2012-03-17T02:51:31Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="265666677" lat="37.7489402" lon="-122.4115659" version="4" timestamp="2012-03-17T02:51:31Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="279669360" lat="37.7451920" lon="-122.4065025" version="1" timestamp="2008-07-20T01:41:44Z" changeset="545482" uid="35195" user="will l">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="279669387" lat="37.7468583" lon="-122.4086066" version="2" timestamp="2014-04-20T04:26:09Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="279669388" lat="37.7467477" lon="-122.4088121" version="2" timestamp="2014-04-20T04:26:09Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="279669389" lat="37.7466577" lon="-122.4089970" version="2" timestamp="2014-04-20T04:26:09Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="279669390" lat="37.7466174" lon="-122.4089985" version="2" timestamp="2014-04-20T04:26:09Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="279669393" lat="37.7465518" lon="-122.4090410" version="2" timestamp="2014-04-20T04:26:09Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="279669394" lat="37.7447387" lon="-122.4113618" version="1" timestamp="2008-07-20T01:41:53Z" changeset="545482" uid="35195" user="will l">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="279697854" lat="37.7481732" lon="-122.4082298" version="2" timestamp="2014-04-20T04:26:09Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="279697865" lat="37.7482178" lon="-122.4082028" version="2" timestamp="2014-04-20T04:26:09Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="279698021" lat="37.7483060" lon="-122.4082229" version="4" timestamp="2009-04-08T15:42:57Z" changeset="326705" uid="28775" user="StellanL"/>
+  <node id="279698136" lat="37.7488730" lon="-122.4126611" version="4" timestamp="2012-03-17T02:51:43Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="279698137" lat="37.7484408" lon="-122.4126199" version="15" timestamp="2012-03-17T02:51:43Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="281652590" lat="37.7677526" lon="-122.4116784" version="5" timestamp="2014-02-10T20:47:42Z" changeset="20492807" uid="1829683" user="Luis36995"/>
+  <node id="286898792" lat="37.7472824" lon="-122.4105740" version="5" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="286898793" lat="37.7472218" lon="-122.4108474" version="6" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="286898794" lat="37.7472138" lon="-122.4114795" version="6" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="286898795" lat="37.7469893" lon="-122.4115652" version="7" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="286898796" lat="37.7469207" lon="-122.4124396" version="5" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="286898797" lat="37.7469019" lon="-122.4128642" version="5" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="286898798" lat="37.7469215" lon="-122.4130332" version="5" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="286898799" lat="37.7469109" lon="-122.4131924" version="5" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="286898800" lat="37.7469207" lon="-122.4132169" version="5" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="286898801" lat="37.7469428" lon="-122.4132333" version="6" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="286898806" lat="37.7470064" lon="-122.4132537" version="5" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="286898807" lat="37.7470505" lon="-122.4132553" version="5" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="286898808" lat="37.7470881" lon="-122.4132651" version="5" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="286898809" lat="37.7471061" lon="-122.4132847" version="5" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="286898810" lat="37.7471412" lon="-122.4133296" version="5" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="286898811" lat="37.7471534" lon="-122.4134292" version="5" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="286898813" lat="37.7472027" lon="-122.4113206" version="5" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="286898814" lat="37.7470122" lon="-122.4115522" version="5" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="286898815" lat="37.7469746" lon="-122.4116053" version="5" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="311783631" lat="37.7465640" lon="-122.4162876" version="3" timestamp="2014-08-12T23:29:45Z" changeset="24713200" uid="14293" user="KindredCoda"/>
+  <node id="315089929" lat="37.7472558" lon="-122.4107959" version="4" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="315089930" lat="37.7472015" lon="-122.4111393" version="5" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="315089944" lat="37.7469707" lon="-122.4115169" version="2" timestamp="2008-11-27T17:55:30Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="315089945" lat="37.7470047" lon="-122.4112337" version="4" timestamp="2008-11-27T17:55:36Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="315089946" lat="37.7469707" lon="-122.4110963" version="2" timestamp="2008-11-27T17:55:30Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="315089947" lat="37.7470047" lon="-122.4107444" version="4" timestamp="2008-11-27T17:55:41Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="315089988" lat="37.7471200" lon="-122.4111307" version="3" timestamp="2008-11-27T17:55:36Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="315089989" lat="37.7470861" lon="-122.4111822" version="2" timestamp="2008-11-27T17:55:36Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="315089990" lat="37.7470522" lon="-122.4112165" version="2" timestamp="2008-11-27T17:55:36Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="315090004" lat="37.7470657" lon="-122.4108217" version="3" timestamp="2008-11-27T17:55:41Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="315090015" lat="37.7471879" lon="-122.4108303" version="1" timestamp="2008-11-27T17:55:25Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="315090016" lat="37.7471540" lon="-122.4108045" version="1" timestamp="2008-11-27T17:55:25Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="315090017" lat="37.7471065" lon="-122.4107959" version="1" timestamp="2008-11-27T17:55:25Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="315090018" lat="37.7470522" lon="-122.4108732" version="1" timestamp="2008-11-27T17:55:25Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="315090019" lat="37.7470454" lon="-122.4109075" version="1" timestamp="2008-11-27T17:55:25Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="315090020" lat="37.7470454" lon="-122.4109762" version="1" timestamp="2008-11-27T17:55:25Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="315090021" lat="37.7470589" lon="-122.4110277" version="1" timestamp="2008-11-27T17:55:25Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="315090022" lat="37.7470793" lon="-122.4110878" version="1" timestamp="2008-11-27T17:55:25Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="315090023" lat="37.7471608" lon="-122.4111478" version="1" timestamp="2008-11-27T17:55:25Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="315090093" lat="37.7469164" lon="-122.4132850" version="1" timestamp="2008-11-27T17:56:52Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="315090094" lat="37.7468757" lon="-122.4133880" version="1" timestamp="2008-11-27T17:56:52Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="315090129" lat="37.7472944" lon="-122.4114646" version="2" timestamp="2008-11-27T17:57:36Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="315090130" lat="37.7472693" lon="-122.4114654" version="1" timestamp="2008-11-27T17:57:35Z" changeset="801380" uid="35195" user="will l"/>
+  <node id="318299087" lat="37.7469448" lon="-122.4107198" version="3" timestamp="2008-12-13T08:20:17Z" changeset="343384" uid="28775" user="StellanL"/>
+  <node id="370832023" lat="37.7484102" lon="-122.4081984" version="2" timestamp="2009-04-08T15:43:23Z" changeset="326705" uid="28775" user="StellanL"/>
+  <node id="775307974" lat="37.7484460" lon="-122.4075989" version="2" timestamp="2014-04-20T04:26:10Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="827319118" lat="37.7541244" lon="-122.4138136" version="1" timestamp="2010-07-21T10:47:42Z" changeset="5277809" uid="116029" user="Gregory Arenius"/>
+  <node id="827319179" lat="37.7545764" lon="-122.4132058" version="2" timestamp="2012-03-17T02:51:43Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="1420257465" lat="37.7522485" lon="-122.4183810" version="1" timestamp="2011-09-01T17:07:48Z" changeset="9186342" uid="381909" user="JessAk71"/>
+  <node id="1636827304" lat="37.7483314" lon="-122.4126087" version="2" timestamp="2013-07-29T01:00:35Z" changeset="17132959" uid="14293" user="KindredCoda"/>
+  <node id="1677788920" lat="37.7526031" lon="-122.4124850" version="1" timestamp="2012-03-17T02:51:22Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="1677788921" lat="37.7603822" lon="-122.4117208" version="1" timestamp="2012-03-17T02:51:22Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="1677788923" lat="37.7491384" lon="-122.4165194" version="2" timestamp="2013-09-11T17:29:08Z" changeset="17786961" uid="564585" user="wegavision"/>
+  <node id="1677788926" lat="37.7589669" lon="-122.4136099" version="2" timestamp="2014-02-14T10:50:35Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="1677788928" lat="37.7492685" lon="-122.4143598" version="1" timestamp="2012-03-17T02:51:22Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="1677788930" lat="37.7473501" lon="-122.4148568" version="2" timestamp="2014-08-13T01:08:21Z" changeset="24714082" uid="14293" user="KindredCoda"/>
+  <node id="1677788932" lat="37.7506802" lon="-122.4177482" version="1" timestamp="2012-03-17T02:51:22Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="1677788937" lat="37.7481674" lon="-122.4158786" version="3" timestamp="2013-07-29T01:00:35Z" changeset="17132959" uid="14293" user="KindredCoda">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="1677788938" lat="37.7592638" lon="-122.4098259" version="1" timestamp="2012-03-17T02:51:22Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="1677788940" lat="37.7490740" lon="-122.4175919" version="1" timestamp="2012-03-17T02:51:22Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="1677788944" lat="37.7594250" lon="-122.4099034" version="1" timestamp="2012-03-17T02:51:22Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="1677788947" lat="37.7522777" lon="-122.4178953" version="1" timestamp="2012-03-17T02:51:22Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="1677788948" lat="37.7482619" lon="-122.4158875" version="3" timestamp="2013-07-29T01:00:35Z" changeset="17132959" uid="14293" user="KindredCoda">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="1677788950" lat="37.7523410" lon="-122.4168425" version="2" timestamp="2013-09-11T17:29:08Z" changeset="17786961" uid="564585" user="wegavision"/>
+  <node id="1677788952" lat="37.7542285" lon="-122.4120718" version="1" timestamp="2012-03-17T02:51:23Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="1677788962" lat="37.7492042" lon="-122.4154169" version="1" timestamp="2012-03-17T02:51:23Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="1677788964" lat="37.7483083" lon="-122.4137007" version="3" timestamp="2013-07-29T01:00:34Z" changeset="17132959" uid="14293" user="KindredCoda">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="1677788966" lat="37.7494348" lon="-122.4116135" version="1" timestamp="2012-03-17T02:51:23Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="1677788968" lat="37.7510083" lon="-122.4123323" version="1" timestamp="2012-03-17T02:51:23Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="1677788970" lat="37.7476363" lon="-122.4095878" version="2" timestamp="2014-04-20T04:26:09Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="1677788975" lat="37.7508128" lon="-122.4155588" version="1" timestamp="2012-03-17T02:51:23Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="1677788982" lat="37.7508760" lon="-122.4145155" version="1" timestamp="2012-03-17T02:51:24Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="1677788984" lat="37.7684709" lon="-122.4167235" version="1" timestamp="2012-03-17T02:51:24Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="1677788986" lat="37.7593232" lon="-122.4089378" version="1" timestamp="2012-03-17T02:51:24Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="1677788992" lat="37.7595121" lon="-122.4099267" version="1" timestamp="2012-03-17T02:51:24Z" changeset="11004273" uid="14293" user="KindredCoda"/>
+  <node id="2007343346" lat="37.7540390" lon="-122.4152355" version="1" timestamp="2012-11-11T00:12:49Z" changeset="13827737" uid="481533" user="dbaron">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="2007343347" lat="37.7540269" lon="-122.4154373" version="1" timestamp="2012-11-11T00:12:49Z" changeset="13827737" uid="481533" user="dbaron">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="2007343348" lat="37.7541296" lon="-122.4153504" version="1" timestamp="2012-11-11T00:12:49Z" changeset="13827737" uid="481533" user="dbaron">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="2007343349" lat="37.7539520" lon="-122.4153334" version="1" timestamp="2012-11-11T00:12:49Z" changeset="13827737" uid="481533" user="dbaron">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="2007343351" lat="37.7523550" lon="-122.4151805" version="1" timestamp="2012-11-11T00:12:49Z" changeset="13827737" uid="481533" user="dbaron">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="2007343352" lat="37.7538949" lon="-122.4176253" version="1" timestamp="2012-11-11T00:12:49Z" changeset="13827737" uid="481533" user="dbaron">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="2007343353" lat="37.7526590" lon="-122.4130227" version="1" timestamp="2012-11-11T00:12:49Z" changeset="13827737" uid="481533" user="dbaron">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="2007343354" lat="37.7539076" lon="-122.4174134" version="1" timestamp="2012-11-11T00:12:49Z" changeset="13827737" uid="481533" user="dbaron">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="2007343356" lat="37.7524838" lon="-122.4130060" version="1" timestamp="2012-11-11T00:12:49Z" changeset="13827737" uid="481533" user="dbaron">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="2007343357" lat="37.7525269" lon="-122.4151970" version="1" timestamp="2012-11-11T00:12:49Z" changeset="13827737" uid="481533" user="dbaron">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="2007343358" lat="37.7525653" lon="-122.4131117" version="1" timestamp="2012-11-11T00:12:49Z" changeset="13827737" uid="481533" user="dbaron">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="2007343359" lat="37.7525783" lon="-122.4128973" version="1" timestamp="2012-11-11T00:12:49Z" changeset="13827737" uid="481533" user="dbaron">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="2019051052" lat="37.7507195" lon="-122.4171001" version="1" timestamp="2012-11-18T00:38:37Z" changeset="13913081" uid="481533" user="dbaron">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="2019051053" lat="37.7507052" lon="-122.4173355" version="1" timestamp="2012-11-18T00:38:37Z" changeset="13913081" uid="481533" user="dbaron">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="2317662697" lat="37.7467095" lon="-122.4182949" version="2" timestamp="2014-08-12T23:32:54Z" changeset="24713200" uid="14293" user="KindredCoda"/>
+  <node id="2317662715" lat="37.7467034" lon="-122.4183326" version="1" timestamp="2013-05-23T20:56:10Z" changeset="16258076" uid="14293" user="KindredCoda"/>
+  <node id="2317662719" lat="37.7467358" lon="-122.4182265" version="3" timestamp="2014-08-12T23:32:54Z" changeset="24713200" uid="14293" user="KindredCoda">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="2338252881" lat="37.7481450" lon="-122.4139340" version="1" timestamp="2013-06-09T14:50:22Z" changeset="16483139" uid="557058" user="talldave">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="2338253678" lat="37.7485740" lon="-122.4136090" version="1" timestamp="2013-06-09T14:51:32Z" changeset="16483164" uid="557058" user="talldave">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="2338253889" lat="37.7483690" lon="-122.4140740" version="1" timestamp="2013-06-09T14:51:58Z" changeset="16483172" uid="557058" user="talldave">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="2338838593" lat="37.7468843" lon="-122.4115644" version="1" timestamp="2013-06-10T04:01:39Z" changeset="16490668" uid="557058" user="talldave"/>
+  <node id="2338839383" lat="37.7470478" lon="-122.4135113" version="1" timestamp="2013-06-10T04:11:33Z" changeset="16490706" uid="557058" user="talldave">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="2381798128" lat="37.7587709" lon="-122.4168838" version="2" timestamp="2014-02-14T10:50:35Z" changeset="20556569" uid="933797" user="oba510">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="source" v="data.sfgov.org"/>
+  </node>
+  <node id="2399950812" lat="37.7481442" lon="-122.4169647" version="1" timestamp="2013-07-29T01:00:30Z" changeset="17132959" uid="14293" user="KindredCoda"/>
+  <node id="2399950814" lat="37.7481202" lon="-122.4174856" version="1" timestamp="2013-07-29T01:00:30Z" changeset="17132959" uid="14293" user="KindredCoda"/>
+  <node id="2399950828" lat="37.7484193" lon="-122.4084667" version="1" timestamp="2013-07-29T01:00:30Z" changeset="17132959" uid="14293" user="KindredCoda"/>
+  <node id="2399950833" lat="37.7481015" lon="-122.4182761" version="2" timestamp="2014-04-22T08:11:51Z" changeset="21856732" uid="14293" user="KindredCoda"/>
+  <node id="2399950843" lat="37.7483134" lon="-122.4090415" version="1" timestamp="2013-07-29T01:00:30Z" changeset="17132959" uid="14293" user="KindredCoda"/>
+  <node id="2399950864" lat="37.7481117" lon="-122.4176621" version="1" timestamp="2013-07-29T01:00:31Z" changeset="17132959" uid="14293" user="KindredCoda"/>
+  <node id="2399950871" lat="37.7483078" lon="-122.4084667" version="1" timestamp="2013-07-29T01:00:31Z" changeset="17132959" uid="14293" user="KindredCoda"/>
+  <node id="2399950885" lat="37.7481383" lon="-122.4171337" version="1" timestamp="2013-07-29T01:00:31Z" changeset="17132959" uid="14293" user="KindredCoda"/>
+  <node id="2609017331" lat="37.7519038" lon="-122.4162368" version="1" timestamp="2014-01-04T06:13:08Z" changeset="19799515" uid="119881" user="Clorox"/>
+  <node id="2649313724" lat="37.7651685" lon="-122.4163934" version="2" timestamp="2014-11-15T10:02:01Z" changeset="26795042" uid="933797" user="oba510">
+    <tag k="crossing" v="uncontrolled"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2649313729" lat="37.7637125" lon="-122.4162415" version="1" timestamp="2014-02-02T06:55:52Z" changeset="20328911" uid="933797" user="oba510"/>
+  <node id="2652319233" lat="37.7460841" lon="-122.4175240" version="1" timestamp="2014-02-03T18:45:34Z" changeset="20358023" uid="1916758" user="JeffLuszcz"/>
+  <node id="2652319237" lat="37.7468253" lon="-122.4179934" version="2" timestamp="2014-08-12T23:32:54Z" changeset="24713200" uid="14293" user="KindredCoda"/>
+  <node id="2671229967" lat="37.7547009" lon="-122.4092940" version="1" timestamp="2014-02-14T10:50:33Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="2671229968" lat="37.7534093" lon="-122.4119970" version="1" timestamp="2014-02-14T10:50:33Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="2671229969" lat="37.7551990" lon="-122.4093887" version="1" timestamp="2014-02-14T10:50:33Z" changeset="20556569" uid="933797" user="oba510"/>
+  <node id="2800130431" lat="37.7570997" lon="-122.4167211" version="2" timestamp="2014-04-27T00:48:17Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2802825813" lat="37.7464164" lon="-122.4088783" version="1" timestamp="2014-04-20T04:26:07Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="2802825826" lat="37.7466110" lon="-122.4090676" version="1" timestamp="2014-04-20T04:26:07Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="2802825827" lat="37.7463182" lon="-122.4086714" version="1" timestamp="2014-04-20T04:26:07Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="2802825828" lat="37.7466841" lon="-122.4089731" version="1" timestamp="2014-04-20T04:26:07Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="2802825833" lat="37.7467221" lon="-122.4090143" version="1" timestamp="2014-04-20T04:26:07Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="2802825836" lat="37.7468252" lon="-122.4086263" version="1" timestamp="2014-04-20T04:26:07Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="2802825837" lat="37.7482528" lon="-122.4082024" version="1" timestamp="2014-04-20T04:26:07Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="2802825839" lat="37.7481682" lon="-122.4081636" version="1" timestamp="2014-04-20T04:26:07Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="2802825840" lat="37.7468719" lon="-122.4086462" version="1" timestamp="2014-04-20T04:26:07Z" changeset="21809656" uid="933797" user="oba510"/>
+  <node id="2819459470" lat="37.7636430" lon="-122.4173466" version="1" timestamp="2014-04-26T23:15:35Z" changeset="21966085" uid="1192763" user="mlawren5">
+    <tag k="crossing" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes/both"/>
+  </node>
+  <node id="2819459472" lat="37.7634946" lon="-122.4173325" version="1" timestamp="2014-04-26T23:15:35Z" changeset="21966085" uid="1192763" user="mlawren5">
+    <tag k="crossing" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes/both"/>
+  </node>
+  <node id="2819486339" lat="37.7635711" lon="-122.4162433" version="1" timestamp="2014-04-26T23:38:39Z" changeset="21966232" uid="1192763" user="mlawren5">
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="yes/both"/>
+  </node>
+  <node id="2819579956" lat="37.7558419" lon="-122.4133109" version="1" timestamp="2014-04-27T00:48:16Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2819579958" lat="37.7557051" lon="-122.4132989" version="1" timestamp="2014-04-27T00:48:16Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2819579959" lat="37.7557774" lon="-122.4144068" version="1" timestamp="2014-04-27T00:48:16Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2819579962" lat="37.7556401" lon="-122.4143942" version="1" timestamp="2014-04-27T00:48:16Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2819579964" lat="37.7557163" lon="-122.4155023" version="1" timestamp="2014-04-27T00:48:16Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2819579965" lat="37.7555775" lon="-122.4154890" version="1" timestamp="2014-04-27T00:48:16Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2819579968" lat="37.7556517" lon="-122.4165807" version="1" timestamp="2014-04-27T00:48:16Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2819579969" lat="37.7555074" lon="-122.4165673" version="1" timestamp="2014-04-27T00:48:16Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2819579979" lat="37.7572428" lon="-122.4167350" version="1" timestamp="2014-04-27T00:48:17Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2819579984" lat="37.7560788" lon="-122.4094685" version="1" timestamp="2014-04-27T00:48:17Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2819579985" lat="37.7559420" lon="-122.4094565" version="1" timestamp="2014-04-27T00:48:17Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2819579987" lat="37.7561335" lon="-122.4085112" version="1" timestamp="2014-04-27T00:48:17Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2819579989" lat="37.7559999" lon="-122.4084974" version="1" timestamp="2014-04-27T00:48:17Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2819579990" lat="37.7544550" lon="-122.4082787" version="1" timestamp="2014-04-27T00:48:17Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2819579991" lat="37.7545403" lon="-122.4083562" version="1" timestamp="2014-04-27T00:48:17Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2819579992" lat="37.7544456" lon="-122.4084490" version="1" timestamp="2014-04-27T00:48:17Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2819579993" lat="37.7543968" lon="-122.4083430" version="1" timestamp="2014-04-27T00:48:17Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2819579994" lat="37.7544081" lon="-122.4091868" version="1" timestamp="2014-04-27T00:48:17Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2819579995" lat="37.7543948" lon="-122.4094272" version="1" timestamp="2014-04-27T00:48:17Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2819579996" lat="37.7544811" lon="-122.4092736" version="1" timestamp="2014-04-27T00:48:17Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="2819579997" lat="37.7543404" lon="-122.4092612" version="1" timestamp="2014-04-27T00:48:17Z" changeset="21966649" uid="67236" user="jfire">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="3013498611" lat="37.7466555" lon="-122.4160223" version="1" timestamp="2014-08-12T23:29:45Z" changeset="24713200" uid="14293" user="KindredCoda"/>
+  <node id="3013498612" lat="37.7466071" lon="-122.4161749" version="1" timestamp="2014-08-12T23:29:45Z" changeset="24713200" uid="14293" user="KindredCoda"/>
+  <node id="3013498614" lat="37.7466497" lon="-122.4160560" version="1" timestamp="2014-08-12T23:29:45Z" changeset="24713200" uid="14293" user="KindredCoda"/>
+  <node id="3013499288" lat="37.7474962" lon="-122.4162465" version="1" timestamp="2014-08-12T23:32:54Z" changeset="24713200" uid="14293" user="KindredCoda"/>
+  <node id="3013584944" lat="37.7475091" lon="-122.4161990" version="1" timestamp="2014-08-13T01:08:21Z" changeset="24714082" uid="14293" user="KindredCoda"/>
+  <node id="3013584945" lat="37.7474149" lon="-122.4161770" version="1" timestamp="2014-08-13T01:08:21Z" changeset="24714082" uid="14293" user="KindredCoda"/>
+  <node id="3013584946" lat="37.7474619" lon="-122.4161835" version="1" timestamp="2014-08-13T01:08:21Z" changeset="24714082" uid="14293" user="KindredCoda"/>
+  <node id="3013584947" lat="37.7471006" lon="-122.4161045" version="1" timestamp="2014-08-13T01:08:21Z" changeset="24714082" uid="14293" user="KindredCoda"/>
+  <node id="3013584948" lat="37.7471070" lon="-122.4161275" version="1" timestamp="2014-08-13T01:08:21Z" changeset="24714082" uid="14293" user="KindredCoda"/>
+  <node id="3013584949" lat="37.7471350" lon="-122.4161583" version="1" timestamp="2014-08-13T01:08:21Z" changeset="24714082" uid="14293" user="KindredCoda"/>
+  <node id="3013584950" lat="37.7475071" lon="-122.4160780" version="1" timestamp="2014-08-13T01:08:21Z" changeset="24714082" uid="14293" user="KindredCoda"/>
+  <node id="3013584951" lat="37.7471200" lon="-122.4161459" version="1" timestamp="2014-08-13T01:08:21Z" changeset="24714082" uid="14293" user="KindredCoda"/>
+  <node id="3013584952" lat="37.7472220" lon="-122.4138601" version="1" timestamp="2014-08-13T01:08:21Z" changeset="24714082" uid="14293" user="KindredCoda"/>
+  <node id="3188130232" lat="37.7651071" lon="-122.4174951" version="1" timestamp="2014-11-15T10:02:00Z" changeset="26795042" uid="933797" user="oba510">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="3188130246" lat="37.7653531" lon="-122.4164276" version="1" timestamp="2014-11-15T10:02:00Z" changeset="26795042" uid="933797" user="oba510">
+    <tag k="crossing" v="uncontrolled"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="3188130250" lat="37.7652885" lon="-122.4175138" version="1" timestamp="2014-11-15T10:02:00Z" changeset="26795042" uid="933797" user="oba510">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <way id="8916273" version="9" timestamp="2014-04-20T04:26:10Z" changeset="21809656" uid="933797" user="oba510">
+    <nd ref="65292899"/>
+    <nd ref="65292901"/>
+    <nd ref="65292903"/>
+    <nd ref="2802825813"/>
+    <nd ref="65292906"/>
+    <nd ref="2802825827"/>
+    <nd ref="65292908"/>
+    <nd ref="65292910"/>
+    <nd ref="65292912"/>
+    <nd ref="65292916"/>
+    <nd ref="65292920"/>
+    <nd ref="65292926"/>
+    <nd ref="65292928"/>
+    <nd ref="65292932"/>
+    <nd ref="65292935"/>
+    <nd ref="279669360"/>
+    <nd ref="65292937"/>
+    <nd ref="65292939"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Mullen Avenue"/>
+    <tag k="oneway" v="no"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Mullen"/>
+    <tag k="tiger:name_type" v="Ave"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="8916416" version="13" timestamp="2014-04-27T00:48:18Z" changeset="21966649" uid="67236" user="jfire">
+    <nd ref="1677788926"/>
+    <nd ref="65296244"/>
+    <nd ref="2819579956"/>
+    <nd ref="65296247"/>
+    <nd ref="2819579958"/>
+    <nd ref="827319179"/>
+    <nd ref="65296249"/>
+    <nd ref="2007343353"/>
+    <nd ref="65296251"/>
+    <nd ref="2007343356"/>
+    <nd ref="65288827"/>
+    <nd ref="65296254"/>
+    <nd ref="279698136"/>
+    <nd ref="279698137"/>
+    <nd ref="1636827304"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Treat Avenue"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Treat"/>
+    <tag k="tiger:name_type" v="Ave"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="8916417" version="3" timestamp="2010-03-27T15:16:03Z" changeset="4245371" uid="20587" user="balrog-kun">
+    <nd ref="65296261"/>
+    <nd ref="65296262"/>
+    <nd ref="65296264"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Treat Avenue"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Treat"/>
+    <tag k="tiger:name_type" v="Ave"/>
+    <tag k="tiger:separated" v="no"/>
+    <tag k="tiger:source" v="tiger_import_dch_v0.6_20070809"/>
+    <tag k="tiger:tlid" v="192292463:192288723"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="8916527" version="3" timestamp="2010-03-27T15:16:23Z" changeset="4245371" uid="20587" user="balrog-kun">
+    <nd ref="65298409"/>
+    <nd ref="65298413"/>
+    <nd ref="65298417"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Manchester Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Manchester"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:separated" v="no"/>
+    <tag k="tiger:source" v="tiger_import_dch_v0.6_20070809"/>
+    <tag k="tiger:tlid" v="192288601:192288606"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="8916546" version="3" timestamp="2014-08-13T01:08:21Z" changeset="24714082" uid="14293" user="KindredCoda">
+    <nd ref="3013584944"/>
+    <nd ref="3013584946"/>
+    <nd ref="3013584945"/>
+    <nd ref="65298886"/>
+    <nd ref="3013584949"/>
+    <nd ref="3013584951"/>
+    <nd ref="3013584948"/>
+    <nd ref="3013584947"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Emmett Court"/>
+    <tag k="name_1" v="Emmet Court"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Emmett"/>
+    <tag k="tiger:name_base_1" v="Emmet"/>
+    <tag k="tiger:name_type" v="Ct"/>
+    <tag k="tiger:name_type_1" v="Ct"/>
+    <tag k="tiger:reviewed" v="no"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="8917097" version="11" timestamp="2014-08-12T23:29:46Z" changeset="24713200" uid="14293" user="KindredCoda">
+    <nd ref="65287952"/>
+    <nd ref="2652319233"/>
+    <nd ref="311783631"/>
+    <nd ref="3013498612"/>
+    <nd ref="3013498614"/>
+    <nd ref="3013498611"/>
+    <nd ref="65309905"/>
+    <nd ref="65309912"/>
+    <nd ref="65309914"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Mirabel Avenue"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Mirabel"/>
+    <tag k="tiger:name_type" v="Ave"/>
+    <tag k="tiger:reviewed" v="no"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="8917424" version="3" timestamp="2010-03-27T15:18:35Z" changeset="4245371" uid="20587" user="balrog-kun">
+    <nd ref="65317690"/>
+    <nd ref="65317692"/>
+    <nd ref="279669394"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Harrison Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Harrison"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:separated" v="no"/>
+    <tag k="tiger:source" v="tiger_import_dch_v0.6_20070809"/>
+    <tag k="tiger:tlid" v="192288731:192288729"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="8918026" version="3" timestamp="2010-03-27T15:19:50Z" changeset="4245371" uid="20587" user="balrog-kun">
+    <nd ref="65327092"/>
+    <nd ref="65327095"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Franconia Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Franconia"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:separated" v="no"/>
+    <tag k="tiger:source" v="tiger_import_dch_v0.6_20070809"/>
+    <tag k="tiger:tlid" v="192288777:192288779:192288781:192288786"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="8918156" version="6" timestamp="2010-03-27T15:19:55Z" changeset="4245371" uid="20587" user="balrog-kun">
+    <nd ref="65288829"/>
+    <nd ref="65322298"/>
+    <tag k="created_by" v="Potlatch 0.10b"/>
+    <tag k="highway" v="service"/>
+    <tag k="name" v="Lucky Street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Lucky"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:reviewed" v="no"/>
+    <tag k="tiger:separated" v="no"/>
+    <tag k="tiger:source" v="tiger_import_dch_v0.6_20070809"/>
+    <tag k="tiger:tlid" v="192288470:192288476"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="8918376" version="2" timestamp="2010-03-27T15:20:01Z" changeset="4245371" uid="20587" user="balrog-kun">
+    <nd ref="65328997"/>
+    <nd ref="65329002"/>
+    <nd ref="65329004"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Florida Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Florida"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:reviewed" v="no"/>
+    <tag k="tiger:separated" v="no"/>
+    <tag k="tiger:source" v="tiger_import_dch_v0.6_20070809"/>
+    <tag k="tiger:tlid" v="192288524"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="8918773" version="13" timestamp="2014-06-05T20:32:09Z" changeset="22763230" uid="510836" user="Rub21">
+    <nd ref="1677788921"/>
+    <nd ref="65330451"/>
+    <nd ref="65302166"/>
+    <nd ref="65330452"/>
+    <nd ref="65330454"/>
+    <nd ref="65322294"/>
+    <nd ref="65288819"/>
+    <nd ref="65330456"/>
+    <nd ref="258886234"/>
+    <nd ref="65330458"/>
+    <nd ref="65330460"/>
+    <nd ref="65330462"/>
+    <nd ref="65330467"/>
+    <nd ref="65292899"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Alabama Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Alabama"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="8919074" version="7" timestamp="2013-06-10T04:01:39Z" changeset="16490668" uid="557058" user="talldave">
+    <nd ref="65317616"/>
+    <nd ref="65296261"/>
+    <nd ref="65317690"/>
+    <nd ref="2338838593"/>
+    <nd ref="318299087"/>
+    <nd ref="65330467"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Precita Avenue"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Precita"/>
+    <tag k="tiger:name_type" v="Ave"/>
+  </way>
+  <way id="8919075" version="6" timestamp="2010-03-27T15:20:47Z" changeset="4245371" uid="20587" user="balrog-kun">
+    <nd ref="65330467"/>
+    <nd ref="65335559"/>
+    <nd ref="65335545"/>
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Precita Avenue"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Precita"/>
+    <tag k="tiger:name_type" v="Ave"/>
+    <tag k="tiger:reviewed" v="no"/>
+    <tag k="tiger:separated" v="no"/>
+    <tag k="tiger:source" v="tiger_import_dch_v0.6_20070809"/>
+    <tag k="tiger:tlid" v="192288522"/>
+  </way>
+  <way id="8920040" version="5" timestamp="2012-03-17T02:51:58Z" changeset="11004273" uid="14293" user="KindredCoda">
+    <nd ref="1677788950"/>
+    <nd ref="65288845"/>
+    <nd ref="1677788923"/>
+    <tag k="highway" v="service"/>
+    <tag k="name" v="Cypress Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Cypress"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:reviewed" v="no"/>
+    <tag k="tiger:separated" v="no"/>
+    <tag k="tiger:source" v="tiger_import_dch_v0.6_20070809"/>
+    <tag k="tiger:tlid" v="192288376:192288380"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="8920344" version="8" timestamp="2014-03-15T10:25:02Z" changeset="21114268" uid="527535" user="Constable">
+    <nd ref="1677788968"/>
+    <nd ref="1677788920"/>
+    <tag k="highway" v="service"/>
+    <tag k="name" v="Balmy Alley"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Balmy"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:reviewed" v="no"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="8920346" version="16" timestamp="2014-01-02T07:53:12Z" changeset="19757492" uid="119881" user="Clorox">
+    <nd ref="65354522"/>
+    <nd ref="65332316"/>
+    <nd ref="65290336"/>
+    <nd ref="65328992"/>
+    <nd ref="65330456"/>
+    <nd ref="1677788966"/>
+    <nd ref="65296254"/>
+    <nd ref="65327971"/>
+    <nd ref="65317609"/>
+    <nd ref="1677788928"/>
+    <nd ref="65354527"/>
+    <nd ref="1677788962"/>
+    <nd ref="65334202"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="26th Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="26th"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94131"/>
+    <tag k="tiger:zip_right" v="94131"/>
+  </way>
+  <way id="8920704" version="20" timestamp="2014-06-06T21:51:03Z" changeset="22783916" uid="510836" user="Rub21">
+    <nd ref="261510709"/>
+    <nd ref="65308740"/>
+    <nd ref="65358927"/>
+    <nd ref="2819579990"/>
+    <nd ref="65332314"/>
+    <nd ref="2819579992"/>
+    <nd ref="2819579994"/>
+    <nd ref="65290327"/>
+    <nd ref="2819579995"/>
+    <nd ref="65328991"/>
+    <nd ref="65330454"/>
+    <nd ref="65317793"/>
+    <nd ref="1677788952"/>
+    <nd ref="65296249"/>
+    <nd ref="827319118"/>
+    <nd ref="65317603"/>
+    <nd ref="2007343346"/>
+    <nd ref="65359041"/>
+    <nd ref="2007343347"/>
+    <nd ref="65334199"/>
+    <nd ref="2007343354"/>
+    <nd ref="65359043"/>
+    <nd ref="2007343352"/>
+    <nd ref="65359046"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="23rd Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="23rd"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:reviewed" v="no"/>
+    <tag k="tiger:zip_left" v="94114"/>
+    <tag k="tiger:zip_right" v="94114"/>
+  </way>
+  <way id="8921264" version="15" timestamp="2014-11-15T10:02:03Z" changeset="26795042" uid="933797" user="oba510">
+    <nd ref="1677788984"/>
+    <nd ref="65365910"/>
+    <nd ref="3188130246"/>
+    <nd ref="65345337"/>
+    <nd ref="2649313724"/>
+    <nd ref="2649313729"/>
+    <nd ref="65317378"/>
+    <nd ref="2819486339"/>
+    <nd ref="65324841"/>
+    <nd ref="65293573"/>
+    <nd ref="65361437"/>
+    <nd ref="65302180"/>
+    <nd ref="2819579964"/>
+    <nd ref="65365911"/>
+    <nd ref="2819579965"/>
+    <nd ref="2007343348"/>
+    <nd ref="65359041"/>
+    <nd ref="2007343349"/>
+    <nd ref="2007343357"/>
+    <nd ref="65322299"/>
+    <nd ref="2007343351"/>
+    <nd ref="65288839"/>
+    <nd ref="65354527"/>
+    <nd ref="65365921"/>
+    <nd ref="65365923"/>
+    <nd ref="258886223"/>
+    <nd ref="65348841"/>
+    <nd ref="1677788930"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Shotwell Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="8921302" version="7" timestamp="2012-03-17T02:51:45Z" changeset="11004273" uid="14293" user="KindredCoda">
+    <nd ref="1677788982"/>
+    <nd ref="1677788928"/>
+    <tag k="highway" v="service"/>
+    <tag k="name" v="Horace Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Horace"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:reviewed" v="no"/>
+    <tag k="tiger:separated" v="no"/>
+    <tag k="tiger:source" v="tiger_import_dch_v0.6_20070809"/>
+    <tag k="tiger:tlid" v="192288393"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="8921890" version="6" timestamp="2010-03-27T15:25:51Z" changeset="4245371" uid="20587" user="balrog-kun">
+    <nd ref="65309914"/>
+    <nd ref="65371442"/>
+    <nd ref="65371443"/>
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="foot" v="yes"/>
+    <tag k="highway" v="steps"/>
+    <tag k="name" v="Bessie Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Bessie"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:separated" v="no"/>
+    <tag k="tiger:source" v="tiger_import_dch_v0.6_20070809"/>
+    <tag k="tiger:tlid" v="192294002:192288720"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="23878997" version="17" timestamp="2014-11-15T10:02:04Z" changeset="26795042" uid="933797" user="oba510">
+    <nd ref="65299217"/>
+    <nd ref="65334190"/>
+    <nd ref="65334191"/>
+    <nd ref="3188130250"/>
+    <nd ref="65334193"/>
+    <nd ref="3188130232"/>
+    <nd ref="2819459470"/>
+    <nd ref="65317380"/>
+    <nd ref="2819459472"/>
+    <nd ref="65324843"/>
+    <nd ref="65293575"/>
+    <nd ref="2381798128"/>
+    <nd ref="2819579979"/>
+    <nd ref="65302182"/>
+    <nd ref="2800130431"/>
+    <nd ref="2819579968"/>
+    <nd ref="65334198"/>
+    <nd ref="2819579969"/>
+    <nd ref="65334199"/>
+    <nd ref="65322300"/>
+    <tag k="foot" v="yes"/>
+    <tag k="highway" v="primary"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="South Van Ness Avenue"/>
+    <tag k="oneway" v="no"/>
+    <tag k="sidewalk" v="both"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Van Ness"/>
+    <tag k="tiger:name_direction_prefix" v="S"/>
+    <tag k="tiger:name_type" v="Ave"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+    <tag k="trolley_wire" v="yes"/>
+  </way>
+  <way id="24444484" version="4" timestamp="2010-03-27T23:40:06Z" changeset="4250871" uid="20587" user="balrog-kun">
+    <nd ref="265666676"/>
+    <nd ref="279698136"/>
+    <nd ref="265666677"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Kamille Court"/>
+  </way>
+  <way id="24487966" version="3" timestamp="2010-03-27T23:40:13Z" changeset="4250871" uid="20587" user="balrog-kun">
+    <nd ref="65288829"/>
+    <nd ref="65327971"/>
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="highway" v="service"/>
+    <tag k="name" v="Lucky Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Lucky"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:separated" v="no"/>
+    <tag k="tiger:source" v="tiger_import_dch_v0.6_20070809"/>
+    <tag k="tiger:tlid" v="192288470:192288476"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="25292332" version="3" timestamp="2010-03-27T23:44:07Z" changeset="4250871" uid="20587" user="balrog-kun">
+    <nd ref="65371443"/>
+    <nd ref="65298409"/>
+    <nd ref="65371447"/>
+    <nd ref="65317616"/>
+    <tag k="created_by" v="Potlatch 0.9c"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Bessie Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Bessie"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:separated" v="no"/>
+    <tag k="tiger:source" v="tiger_import_dch_v0.6_20070809"/>
+    <tag k="tiger:tlid" v="192294002:192288720"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="25655734" version="8" timestamp="2014-04-20T04:26:11Z" changeset="21809656" uid="933797" user="oba510">
+    <nd ref="65332325"/>
+    <nd ref="65327092"/>
+    <nd ref="279669387"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Peralta Avenue"/>
+    <tag k="oneway" v="no"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Peralta"/>
+    <tag k="tiger:name_type" v="Ave"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="25655736" version="4" timestamp="2014-04-20T04:26:12Z" changeset="21809656" uid="933797" user="oba510">
+    <nd ref="279669393"/>
+    <nd ref="279669390"/>
+    <nd ref="279669389"/>
+    <nd ref="2802825828"/>
+    <nd ref="279669388"/>
+    <nd ref="2802825836"/>
+    <nd ref="279669387"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Peralta Avenue"/>
+  </way>
+  <way id="25655742" version="3" timestamp="2010-03-27T23:51:50Z" changeset="4250871" uid="20587" user="balrog-kun">
+    <nd ref="65335545"/>
+    <nd ref="65330462"/>
+    <nd ref="65317799"/>
+    <nd ref="315090129"/>
+    <nd ref="65317614"/>
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Precita Avenue"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Precita"/>
+    <tag k="tiger:name_type" v="Ave"/>
+    <tag k="tiger:reviewed" v="no"/>
+    <tag k="tiger:separated" v="no"/>
+    <tag k="tiger:source" v="tiger_import_dch_v0.6_20070809"/>
+    <tag k="tiger:tlid" v="192288517:192288518"/>
+    <tag k="tiger:zip_left" v="94110"/>
+  </way>
+  <way id="25657557" version="3" timestamp="2014-02-03T17:42:48Z" changeset="20356825" uid="1916643" user="tom saffell">
+    <nd ref="65332321"/>
+    <nd ref="65332323"/>
+    <nd ref="65332325"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="York Street"/>
+    <tag k="oneway" v="no"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="York"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:reviewed" v="no"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="25657559" version="6" timestamp="2014-04-20T04:26:10Z" changeset="21809656" uid="933797" user="oba510">
+    <nd ref="279697854"/>
+    <nd ref="2802825839"/>
+    <nd ref="65335548"/>
+    <nd ref="65332321"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Precita Avenue"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Precita"/>
+    <tag k="tiger:name_type" v="Ave"/>
+    <tag k="tiger:reviewed" v="no"/>
+    <tag k="tiger:zip_left" v="94110"/>
+  </way>
+  <way id="25657572" version="4" timestamp="2014-04-20T04:26:10Z" changeset="21809656" uid="933797" user="oba510">
+    <nd ref="279698021"/>
+    <nd ref="2802825837"/>
+    <nd ref="279697865"/>
+    <nd ref="279697854"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Precita Avenue"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="25657576" version="2" timestamp="2010-03-27T23:51:54Z" changeset="4250871" uid="20587" user="balrog-kun">
+    <nd ref="279697854"/>
+    <nd ref="65290340"/>
+    <nd ref="65328997"/>
+    <nd ref="65335545"/>
+    <tag k="created_by" v="Potlatch 0.10"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Precita Avenue"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Precita"/>
+    <tag k="tiger:name_type" v="Ave"/>
+    <tag k="tiger:reviewed" v="no"/>
+    <tag k="tiger:separated" v="no"/>
+    <tag k="tiger:source" v="tiger_import_dch_v0.6_20070809"/>
+    <tag k="tiger:tlid" v="192288517:192288518"/>
+    <tag k="tiger:zip_left" v="94110"/>
+  </way>
+  <way id="25821944" version="5" timestamp="2012-03-17T02:51:45Z" changeset="11004273" uid="14293" user="KindredCoda">
+    <nd ref="1677788966"/>
+    <nd ref="265666677"/>
+    <nd ref="258886228"/>
+    <nd ref="65317798"/>
+    <tag k="cycleway" v="lane"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lcn_ref" v="33"/>
+    <tag k="name" v="Harrison Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Harrison"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:separated" v="no"/>
+    <tag k="tiger:source" v="tiger_import_dch_v0.6_20070809"/>
+    <tag k="tiger:tlid" v="192288480:192288485:192288429:192287660:192288414:192288419:192288434:192288494:192288498:192298319"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="25821946" version="6" timestamp="2014-02-14T10:50:35Z" changeset="20556569" uid="933797" user="oba510">
+    <nd ref="1677788952"/>
+    <nd ref="2671229968"/>
+    <nd ref="65317795"/>
+    <nd ref="65288821"/>
+    <nd ref="1677788966"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lcn_ref" v="33"/>
+    <tag k="name" v="Harrison Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Harrison"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="26201737" version="5" timestamp="2008-12-13T08:17:47Z" changeset="343384" uid="28775" user="StellanL">
+    <nd ref="65330462"/>
+    <nd ref="286898792"/>
+    <nd ref="315089929"/>
+    <nd ref="286898793"/>
+    <nd ref="315089930"/>
+    <nd ref="286898813"/>
+    <nd ref="286898794"/>
+    <nd ref="286898814"/>
+    <nd ref="286898795"/>
+    <nd ref="286898815"/>
+    <nd ref="286898796"/>
+    <nd ref="286898797"/>
+    <nd ref="286898798"/>
+    <nd ref="286898799"/>
+    <nd ref="286898800"/>
+    <nd ref="286898801"/>
+    <nd ref="286898806"/>
+    <nd ref="286898807"/>
+    <nd ref="286898808"/>
+    <nd ref="286898809"/>
+    <nd ref="286898810"/>
+    <nd ref="286898811"/>
+    <nd ref="65317614"/>
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="26201738" version="14" timestamp="2014-08-13T01:08:21Z" changeset="24714082" uid="14293" user="KindredCoda">
+    <nd ref="65317614"/>
+    <nd ref="65335543"/>
+    <nd ref="3013584952"/>
+    <nd ref="1677788930"/>
+    <nd ref="3013584950"/>
+    <nd ref="65298882"/>
+    <nd ref="3013584944"/>
+    <nd ref="3013499288"/>
+    <nd ref="2652319237"/>
+    <nd ref="2317662719"/>
+    <nd ref="2317662697"/>
+    <nd ref="2317662715"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Precita Avenue"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Precita"/>
+    <tag k="tiger:name_type" v="Ave"/>
+    <tag k="tiger:reviewed" v="yes"/>
+    <tag k="tiger:zip_left" v="94110"/>
+  </way>
+  <way id="26378124" version="9" timestamp="2014-04-22T19:07:43Z" changeset="21869891" uid="153669" user="dchiles">
+    <nd ref="65332321"/>
+    <nd ref="775307974"/>
+    <nd ref="65281582"/>
+    <tag k="alt_name" v="Army Street"/>
+    <tag k="cycleway" v="lane"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lcn_ref" v="60"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="Cesar Chavez Street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="tiger:cfcc" v="A45"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Cesar Chavez"/>
+    <tag k="tiger:name_base_1" v="Cesar Chavez"/>
+    <tag k="tiger:name_type" v="St"/>
+  </way>
+  <way id="28671647" version="2" timestamp="2008-11-27T17:55:31Z" changeset="801380" uid="35195" user="will l">
+    <nd ref="286898795"/>
+    <nd ref="315089944"/>
+    <nd ref="315089945"/>
+    <nd ref="315089946"/>
+    <nd ref="315089947"/>
+    <nd ref="65330467"/>
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="28671651" version="2" timestamp="2008-11-27T17:55:36Z" changeset="801380" uid="35195" user="will l">
+    <nd ref="315089988"/>
+    <nd ref="315089989"/>
+    <nd ref="315089990"/>
+    <nd ref="315089945"/>
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="28671655" version="2" timestamp="2008-11-27T17:55:41Z" changeset="801380" uid="35195" user="will l">
+    <nd ref="315090004"/>
+    <nd ref="315089947"/>
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="28671658" version="1" timestamp="2008-11-27T17:55:25Z" changeset="801380" uid="35195" user="will l">
+    <nd ref="286898793"/>
+    <nd ref="315090015"/>
+    <nd ref="315090016"/>
+    <nd ref="315090017"/>
+    <nd ref="315090004"/>
+    <nd ref="315090018"/>
+    <nd ref="315090019"/>
+    <nd ref="315090020"/>
+    <nd ref="315090021"/>
+    <nd ref="315090022"/>
+    <nd ref="315089988"/>
+    <nd ref="315090023"/>
+    <nd ref="315089930"/>
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="28671673" version="1" timestamp="2008-11-27T17:56:52Z" changeset="801380" uid="35195" user="will l">
+    <nd ref="286898801"/>
+    <nd ref="315090093"/>
+    <nd ref="315090094"/>
+    <nd ref="65317616"/>
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="28671679" version="1" timestamp="2008-11-27T17:57:36Z" changeset="801380" uid="35195" user="will l">
+    <nd ref="315090129"/>
+    <nd ref="315090130"/>
+    <nd ref="286898794"/>
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="30758091" version="18" timestamp="2014-04-22T19:07:45Z" changeset="21869891" uid="153669" user="dchiles">
+    <nd ref="258886237"/>
+    <nd ref="65348994"/>
+    <nd ref="258886230"/>
+    <nd ref="65348996"/>
+    <nd ref="370832023"/>
+    <nd ref="2399950828"/>
+    <nd ref="258886236"/>
+    <tag k="alt_name" v="Army Street"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lcn_ref" v="60"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="Cesar Chavez Street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Cesar Chavez"/>
+    <tag k="tiger:name_base_1" v="Army"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:name_type_1" v="St"/>
+    <tag k="tiger:zip_left" v="94131"/>
+    <tag k="tiger:zip_left_1" v="94131"/>
+    <tag k="tiger:zip_right" v="94131"/>
+  </way>
+  <way id="133781711" version="1" timestamp="2011-10-18T20:51:11Z" changeset="9595130" uid="207745" user="NE2">
+    <nd ref="65317798"/>
+    <nd ref="65317799"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Harrison Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Harrison"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:reviewed" v="no"/>
+    <tag k="tiger:separated" v="no"/>
+    <tag k="tiger:source" v="tiger_import_dch_v0.6_20070809"/>
+    <tag k="tiger:tlid" v="192288480:192288485:192288429:192287660:192288414:192288419:192288434:192288494:192288498:192298319"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="155373676" version="3" timestamp="2014-02-14T10:50:36Z" changeset="20556569" uid="933797" user="oba510">
+    <nd ref="1677788964"/>
+    <nd ref="265666676"/>
+    <nd ref="65317609"/>
+    <nd ref="65288832"/>
+    <nd ref="65317606"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="name" v="Folsom Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="155373679" version="2" timestamp="2014-04-27T00:48:20Z" changeset="21966649" uid="67236" user="jfire">
+    <nd ref="1677788986"/>
+    <nd ref="65332307"/>
+    <nd ref="65332309"/>
+    <nd ref="65302160"/>
+    <nd ref="2819579987"/>
+    <nd ref="65332311"/>
+    <nd ref="2819579989"/>
+    <nd ref="2819579991"/>
+    <nd ref="65332314"/>
+    <nd ref="2819579993"/>
+    <nd ref="65322284"/>
+    <nd ref="65288813"/>
+    <nd ref="65332316"/>
+    <nd ref="258886230"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="York Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="155373682" version="2" timestamp="2014-01-21T00:25:04Z" changeset="20114799" uid="481533" user="dbaron">
+    <nd ref="65296192"/>
+    <nd ref="65303911"/>
+    <nd ref="281652590"/>
+    <nd ref="65328976"/>
+    <nd ref="65328978"/>
+    <nd ref="65317363"/>
+    <nd ref="65290960"/>
+    <nd ref="65324938"/>
+    <nd ref="65293544"/>
+    <nd ref="65328981"/>
+    <nd ref="65328983"/>
+    <nd ref="65328985"/>
+    <nd ref="65302164"/>
+    <nd ref="65328989"/>
+    <nd ref="65328991"/>
+    <nd ref="65322285"/>
+    <nd ref="65288817"/>
+    <nd ref="65328992"/>
+    <nd ref="258886225"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Florida Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="155373691" version="1" timestamp="2012-03-17T02:51:29Z" changeset="11004273" uid="14293" user="KindredCoda">
+    <nd ref="1677788975"/>
+    <nd ref="1677788962"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="223916565" version="5" timestamp="2014-04-27T00:48:19Z" changeset="21966649" uid="67236" user="jfire">
+    <nd ref="65317606"/>
+    <nd ref="65317603"/>
+    <nd ref="2819579962"/>
+    <nd ref="65317601"/>
+    <nd ref="2819579959"/>
+    <nd ref="65302176"/>
+    <nd ref="65317599"/>
+    <nd ref="65293569"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="name" v="Folsom Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="225059532" version="1" timestamp="2013-06-10T04:01:39Z" changeset="16490668" uid="557058" user="talldave">
+    <nd ref="2338838593"/>
+    <nd ref="286898795"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="footway"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="225518496" version="5" timestamp="2014-04-22T19:07:42Z" changeset="21869891" uid="153669" user="dchiles">
+    <nd ref="1677788964"/>
+    <nd ref="258886223"/>
+    <nd ref="1677788948"/>
+    <tag k="alt_name" v="Army Street"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lcn_ref" v="60"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="Cesar Chavez Street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Cesar Chavez"/>
+    <tag k="tiger:name_base_1" v="Army"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:name_type_1" v="St"/>
+    <tag k="tiger:zip_left" v="94131"/>
+    <tag k="tiger:zip_left_1" v="94131"/>
+    <tag k="tiger:zip_right" v="94131"/>
+  </way>
+  <way id="225518498" version="5" timestamp="2014-04-22T19:07:44Z" changeset="21869891" uid="153669" user="dchiles">
+    <nd ref="65317612"/>
+    <nd ref="65317798"/>
+    <nd ref="65330458"/>
+    <nd ref="65328994"/>
+    <nd ref="2399950843"/>
+    <nd ref="65290337"/>
+    <tag k="alt_name" v="Army Street"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lcn_ref" v="60"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="Cesar Chavez Street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="tiger:cfcc" v="A45"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Cesar Chavez"/>
+    <tag k="tiger:name_base_1" v="Cesar Chavez"/>
+    <tag k="tiger:name_type" v="St"/>
+  </way>
+  <way id="225518501" version="2" timestamp="2014-02-14T10:50:36Z" changeset="20556569" uid="933797" user="oba510">
+    <nd ref="65317612"/>
+    <nd ref="1677788964"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="name" v="Folsom Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="254299725" version="5" timestamp="2014-04-22T19:10:13Z" changeset="21869891" uid="153669" user="dchiles">
+    <nd ref="65322300"/>
+    <nd ref="2609017331"/>
+    <tag k="foot" v="yes"/>
+    <tag k="highway" v="primary"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="South Van Ness Avenue"/>
+    <tag k="oneway" v="no"/>
+    <tag k="sidewalk" v="both"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Van Ness"/>
+    <tag k="tiger:name_direction_prefix" v="S"/>
+    <tag k="tiger:name_type" v="Ave"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+    <tag k="trolley_wire" v="yes"/>
+  </way>
+  <way id="254299726" version="4" timestamp="2014-04-22T19:10:15Z" changeset="21869891" uid="153669" user="dchiles">
+    <nd ref="65288844"/>
+    <nd ref="65334202"/>
+    <tag k="foot" v="yes"/>
+    <tag k="highway" v="primary"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="South Van Ness Avenue"/>
+    <tag k="oneway" v="no"/>
+    <tag k="sidewalk" v="both"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Van Ness"/>
+    <tag k="tiger:name_direction_prefix" v="S"/>
+    <tag k="tiger:name_type" v="Ave"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+    <tag k="trolley_wire" v="yes"/>
+  </way>
+  <way id="254299728" version="1" timestamp="2013-12-30T06:32:20Z" changeset="19709336" uid="119881" user="Clorox">
+    <nd ref="65322300"/>
+    <nd ref="1677788950"/>
+    <nd ref="65322306"/>
+    <nd ref="1677788947"/>
+    <nd ref="1420257465"/>
+    <nd ref="65322310"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="name" v="24th Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="24th"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94114"/>
+    <tag k="tiger:zip_right" v="94114"/>
+  </way>
+  <way id="254299729" version="2" timestamp="2014-01-02T07:53:12Z" changeset="19757492" uid="119881" user="Clorox">
+    <nd ref="65288844"/>
+    <nd ref="65288845"/>
+    <nd ref="2019051052"/>
+    <nd ref="65288847"/>
+    <nd ref="2019051053"/>
+    <nd ref="1677788932"/>
+    <nd ref="65288850"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="cycleway" v="no"/>
+    <tag k="foot" v="yes"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="25th Street"/>
+    <tag k="oneway" v="no"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="25th"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94114"/>
+    <tag k="tiger:zip_right" v="94114"/>
+    <tag k="trolley_wire" v="yes"/>
+  </way>
+  <way id="254750821" version="2" timestamp="2014-01-04T06:14:25Z" changeset="19799515" uid="119881" user="Clorox">
+    <nd ref="65322282"/>
+    <nd ref="65322284"/>
+    <nd ref="65290335"/>
+    <nd ref="65322285"/>
+    <nd ref="65322294"/>
+    <nd ref="65317795"/>
+    <nd ref="1677788920"/>
+    <nd ref="2007343359"/>
+    <nd ref="65296251"/>
+    <nd ref="2007343358"/>
+    <nd ref="65322298"/>
+    <nd ref="65317606"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="name" v="24th Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="24th"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94114"/>
+    <tag k="tiger:zip_right" v="94114"/>
+  </way>
+  <way id="254750822" version="1" timestamp="2014-01-02T02:45:33Z" changeset="19756167" uid="119881" user="Clorox">
+    <nd ref="65288811"/>
+    <nd ref="65288813"/>
+    <nd ref="65288815"/>
+    <nd ref="65288817"/>
+    <nd ref="65288819"/>
+    <nd ref="65288821"/>
+    <nd ref="1677788968"/>
+    <nd ref="65288827"/>
+    <nd ref="65288829"/>
+    <nd ref="65288832"/>
+    <nd ref="1677788982"/>
+    <nd ref="65288839"/>
+    <nd ref="1677788975"/>
+    <nd ref="65288844"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="cycleway" v="no"/>
+    <tag k="foot" v="yes"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="25th Street"/>
+    <tag k="oneway" v="no"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="25th"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94114"/>
+    <tag k="tiger:zip_right" v="94114"/>
+  </way>
+  <way id="254758112" version="1" timestamp="2014-01-02T06:36:19Z" changeset="19757097" uid="119881" user="Clorox">
+    <nd ref="65290337"/>
+    <nd ref="65290340"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Bryant Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="254758113" version="1" timestamp="2014-01-02T06:36:19Z" changeset="19757097" uid="119881" user="Clorox">
+    <nd ref="258886236"/>
+    <nd ref="65290337"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Bryant Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="254758117" version="1" timestamp="2014-01-02T06:36:20Z" changeset="19757097" uid="119881" user="Clorox">
+    <nd ref="65290337"/>
+    <nd ref="2399950871"/>
+    <nd ref="279698021"/>
+    <nd ref="65348902"/>
+    <nd ref="65332321"/>
+    <tag k="alt_name" v="Army Street"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lcn_ref" v="60"/>
+    <tag k="name" v="Cesar Chavez Street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="tiger:cfcc" v="A45"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Cesar Chavez"/>
+    <tag k="tiger:name_base_1" v="Cesar Chavez"/>
+    <tag k="tiger:name_type" v="St"/>
+  </way>
+  <way id="254758118" version="2" timestamp="2014-04-22T19:07:45Z" changeset="21869891" uid="153669" user="dchiles">
+    <nd ref="258886236"/>
+    <nd ref="258886225"/>
+    <nd ref="258886234"/>
+    <nd ref="258886228"/>
+    <nd ref="1636827304"/>
+    <nd ref="1677788964"/>
+    <tag k="alt_name" v="Army Street"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lcn_ref" v="60"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="Cesar Chavez Street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Cesar Chavez"/>
+    <tag k="tiger:name_base_1" v="Army"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:name_type_1" v="St"/>
+    <tag k="tiger:zip_left" v="94131"/>
+    <tag k="tiger:zip_left_1" v="94131"/>
+    <tag k="tiger:zip_right" v="94131"/>
+  </way>
+  <way id="254758119" version="2" timestamp="2014-01-03T05:00:37Z" changeset="19780327" uid="119881" user="Clorox">
+    <nd ref="2399950833"/>
+    <nd ref="2399950864"/>
+    <nd ref="2399950814"/>
+    <nd ref="2399950885"/>
+    <nd ref="2399950812"/>
+    <nd ref="1677788937"/>
+    <tag k="alt_name" v="Army Street"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lcn_ref" v="60"/>
+    <tag k="name" v="Cesar Chavez Street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="tiger:cfcc" v="A45"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Cesar Chavez"/>
+    <tag k="tiger:name_base_1" v="Cesar Chavez"/>
+    <tag k="tiger:name_type" v="St"/>
+  </way>
+  <way id="254759910" version="3" timestamp="2014-04-27T00:48:20Z" changeset="21966649" uid="67236" user="jfire">
+    <nd ref="65290294"/>
+    <nd ref="65290296"/>
+    <nd ref="65290299"/>
+    <nd ref="65290302"/>
+    <nd ref="1677788992"/>
+    <nd ref="1677788944"/>
+    <nd ref="1677788938"/>
+    <nd ref="65290305"/>
+    <nd ref="65290307"/>
+    <nd ref="65290312"/>
+    <nd ref="65290314"/>
+    <nd ref="2819579984"/>
+    <nd ref="65290322"/>
+    <nd ref="2819579985"/>
+    <nd ref="2671229969"/>
+    <nd ref="2671229967"/>
+    <nd ref="2819579996"/>
+    <nd ref="65290327"/>
+    <nd ref="2819579997"/>
+    <nd ref="65290335"/>
+    <nd ref="65288815"/>
+    <nd ref="65290336"/>
+    <nd ref="258886236"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Bryant Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="254759956" version="4" timestamp="2014-05-22T00:31:46Z" changeset="22477346" uid="3158" user="Eric Fischer">
+    <nd ref="65334202"/>
+    <nd ref="1677788948"/>
+    <tag k="foot" v="yes"/>
+    <tag k="highway" v="primary"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="South Van Ness Avenue"/>
+    <tag k="oneway" v="no"/>
+    <tag k="sidewalk" v="both"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Van Ness"/>
+    <tag k="tiger:name_direction_prefix" v="S"/>
+    <tag k="tiger:name_type" v="Ave"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="254759976" version="1" timestamp="2014-01-02T07:51:11Z" changeset="19757492" uid="119881" user="Clorox">
+    <nd ref="65334202"/>
+    <nd ref="1677788923"/>
+    <nd ref="65354529"/>
+    <nd ref="1677788940"/>
+    <nd ref="65354532"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="26th Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="26th"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94131"/>
+    <tag k="tiger:zip_right" v="94131"/>
+    <tag k="trolley_wire" v="yes"/>
+  </way>
+  <way id="254982898" version="2" timestamp="2014-04-22T19:07:44Z" changeset="21869891" uid="153669" user="dchiles">
+    <nd ref="1677788937"/>
+    <nd ref="65348841"/>
+    <nd ref="65317612"/>
+    <tag k="alt_name" v="Army Street"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lcn_ref" v="60"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="Cesar Chavez Street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="tiger:cfcc" v="A45"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Cesar Chavez"/>
+    <tag k="tiger:name_base_1" v="Cesar Chavez"/>
+    <tag k="tiger:name_type" v="St"/>
+  </way>
+  <way id="255178075" version="2" timestamp="2014-02-14T10:50:38Z" changeset="20556569" uid="933797" user="oba510">
+    <nd ref="65317623"/>
+    <nd ref="65317618"/>
+    <nd ref="65317616"/>
+    <nd ref="65317614"/>
+    <nd ref="65317612"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="name" v="Folsom Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="255178139" version="3" timestamp="2014-04-22T19:10:13Z" changeset="21869891" uid="153669" user="dchiles">
+    <nd ref="2609017331"/>
+    <nd ref="65288844"/>
+    <tag k="foot" v="yes"/>
+    <tag k="highway" v="primary"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="South Van Ness Avenue"/>
+    <tag k="oneway" v="no"/>
+    <tag k="sidewalk" v="both"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Van Ness"/>
+    <tag k="tiger:name_direction_prefix" v="S"/>
+    <tag k="tiger:name_type" v="Ave"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+    <tag k="trolley_wire" v="yes"/>
+  </way>
+  <way id="255178167" version="1" timestamp="2014-01-04T06:13:28Z" changeset="19799515" uid="119881" user="Clorox">
+    <nd ref="65317606"/>
+    <nd ref="65322299"/>
+    <nd ref="65322300"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="name" v="24th Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="24th"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94114"/>
+    <tag k="tiger:zip_right" v="94114"/>
+  </way>
+  <way id="257570212" version="1" timestamp="2014-01-21T00:25:04Z" changeset="20114799" uid="481533" user="dbaron">
+    <nd ref="65328994"/>
+    <nd ref="1677788970"/>
+    <nd ref="65328997"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Florida Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="257570213" version="1" timestamp="2014-01-21T00:25:04Z" changeset="20114799" uid="481533" user="dbaron">
+    <nd ref="258886225"/>
+    <nd ref="65328994"/>
+    <tag k="highway" v="footway"/>
+    <tag k="name" v="Florida Street"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="275620211" version="1" timestamp="2014-04-20T04:26:08Z" changeset="21809656" uid="933797" user="oba510">
+    <nd ref="279669387"/>
+    <nd ref="2802825840"/>
+    <nd ref="65329004"/>
+    <nd ref="2802825833"/>
+    <nd ref="65361214"/>
+    <nd ref="2802825826"/>
+    <nd ref="279669393"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Peralta Avenue"/>
+    <tag k="oneway" v="no"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Peralta"/>
+    <tag k="tiger:name_type" v="Ave"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+  <way id="276338266" version="1" timestamp="2014-04-22T19:06:55Z" changeset="21869891" uid="153669" user="dchiles">
+    <nd ref="1677788948"/>
+    <nd ref="258886222"/>
+    <tag k="alt_name" v="Army Street"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lcn_ref" v="60"/>
+    <tag k="name" v="Cesar Chavez Street"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Cesar Chavez"/>
+    <tag k="tiger:name_base_1" v="Army"/>
+    <tag k="tiger:name_type" v="St"/>
+    <tag k="tiger:name_type_1" v="St"/>
+    <tag k="tiger:zip_left" v="94131"/>
+    <tag k="tiger:zip_left_1" v="94131"/>
+    <tag k="tiger:zip_right" v="94131"/>
+  </way>
+  <way id="283536090" version="1" timestamp="2014-05-22T00:31:45Z" changeset="22477346" uid="3158" user="Eric Fischer">
+    <nd ref="1677788948"/>
+    <nd ref="1677788937"/>
+    <tag k="foot" v="yes"/>
+    <tag k="highway" v="primary"/>
+    <tag k="maxspeed" v="25 mph"/>
+    <tag k="name" v="South Van Ness Avenue"/>
+    <tag k="oneway" v="no"/>
+    <tag k="sidewalk" v="both"/>
+    <tag k="tiger:cfcc" v="A41"/>
+    <tag k="tiger:county" v="San Francisco, CA"/>
+    <tag k="tiger:name_base" v="Van Ness"/>
+    <tag k="tiger:name_direction_prefix" v="S"/>
+    <tag k="tiger:name_type" v="Ave"/>
+    <tag k="tiger:zip_left" v="94110"/>
+    <tag k="tiger:zip_right" v="94110"/>
+  </way>
+
+</osm>

@@ -18,3 +18,8 @@ Credits
 * [Abraham Flaxman](https://github.com/aflaxman)'s code for [OSM to NetworkX](https://gist.github.com/aflaxman/287370)
 * [Klokan Bounding Box Tool](http://boundingbox.klokantech.com/)
 * [GeoJSON Lint](http://geojsonlint.com/)
+* [d3](http://d3js.org/)
+* [d3.geom.contour](http://bl.ocks.org/mbostock/4241134)
+* [NetworkX](http://networkx.lanl.gov/)
+* [MetroPOLICE Hastings](http://en.wikipedia.org/wiki/Metropolis%E2%80%93Hastings_algorithm)
+* [Edge Contraction](https://gist.github.com/aanastasiou/7639465)
