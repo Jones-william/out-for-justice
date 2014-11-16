@@ -12,6 +12,8 @@ from tornado.web import RequestHandler, StaticFileHandler
 from tornado.httpserver import HTTPServer
 from tornado.gen import coroutine
 
+# so so lazy
+sys.path.append('.')
 from app.optim import slow_compute_loss, random_downhill_walk
 
 timestr = {
