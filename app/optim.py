@@ -1,7 +1,9 @@
 
 import random
 import numpy as np
+import scipy.spatial as sps
 import networkx as nx
+
 
 def get_giant_component(g):
     """
@@ -95,8 +97,7 @@ def slow_compute_loss(graph, positions, risks, agg=np.sum):
         return by_place
 
 def random_downhill_walk(graph, positions, risks, num_steps=100, 
-                         prob_step=.25,
-                         random_jump=0.50):
+                         prob_step=.25):
     """
     Parameters
     ----------
@@ -122,6 +123,55 @@ def random_downhill_walk(graph, positions, risks, num_steps=100,
 
         positions.append(new_position)
         losses.append(slow_compute_loss(graph, new_position, risks, agg=np.sum))
+
+        if (losses[-1] < losses[-2]) or (random.random() < prob_step):
+            current = new_position
+
+    return sorted(enumerate(positions), key=lambda x: losses[x[0]])[0][1]
+
+def heuristic_compute_loss(latlons, positions, risks, agg=np.sum):
+    car_latlons = latlons[positions.astype(np.bool),:]
+    available_dists = sps.distance.cdist(latlons, car_latlons)
+
+    best_dist = available_dists.min(1).reshape((-1, 1))
+    by_place = (best_dist * risks)
+    if agg is not None:
+        return agg(by_place)
+    else:
+        return by_place
+
+
+def fast_random_downhill_walk(graph,
+        latlons, positions, risks, num_steps=100, 
+        prob_step=.25):
+    """
+    Do a walk with a faster loss function evaluation as a heuristic and return
+    the best one (it will be evaluated with real loss function later)
+
+    Parameters
+    ----------
+    latlons : N x 2 array of lats/lons we'll use to compute distance
+    positions : starting positions
+    risks : risks of activities
+    """
+
+    # initialize the optimization
+    positions = [positions]
+    losses = [heuristic_compute_loss(latlons, positions[-1], risks)]
+    current = positions[-1]
+    tried = set() # don't evalute the (costly) loss function twice
+
+    for i in range(num_steps):
+
+        new_position = step(graph, current)
+        pos_id = tuple(new_position.nonzero()[0])
+        if pos_id in tried:
+            continue
+
+        tried.add(pos_id)
+
+        positions.append(new_position)
+        losses.append(heuristic_compute_loss(latlons, new_position, risks, agg=np.sum))
 
         if (losses[-1] < losses[-2]) or (random.random() < prob_step):
             current = new_position
