@@ -142,20 +142,22 @@ summary(tiled_VIOLENTs$sum_crime)
 tiled_VIOLENTs[sample(nrow(tiled_VIOLENTs), 30),]
 
 
-m1 <- gbm.step(
-    data=tiled_VIOLENTs, 
-    gbm.x = c(4:5, 7:8),
-    gbm.y = 6,
-    family = "poisson", 
-    n.folds = 5,
-    n.trees = 20,
-    learning.rate = 0.01,
-    tree.complexity = 3,
-    bag.fraction = 0.75)
+#m1 <- gbm.step(
+#    data=tiled_VIOLENTs, 
+#    gbm.x = c(4:5, 7:8),
+#    gbm.y = 6,
+#    family = "poisson", 
+#    n.folds = 5,
+#    n.trees = 20,
+#    learning.rate = 0.01,
+#    tree.complexity = 3,
+#    bag.fraction = 0.75)
 #save(m1, file = "violentModelSF.Rda")
+load(file = "models/violentModelSF.Rda")
 
-
-
+#install.packages("ROCR")
+evaluateROCR(m1,a=tiled_VIOLENTs$sum_crime)
+    
 #ndat <- expand.grid(X = cut_to_mean(levels(dat$Xcut)), 
 #    Y = cut_to_mean(levels(dat$Ycut)), 
 #    crimetype = "VIOLENT",
@@ -360,9 +362,10 @@ m3 <- gbm.step(
     learning.rate = 0.01,
     tree.complexity = 3,
     bag.fraction = 0.75)
-save(m3, file = "intoxModelSF.Rda")
-# scp solomon@dev1706.prn1.facebook.com:/home/solomon/sftp/out-for-justice/intoxModelSF.Rda /Users/solomon/Documents/workspace/BayesImpact/intoxModelSF.Rda
+#save(m3, file = "models/intoxModelSF.Rda")
+# scp solomon@dev1706.prn1.facebook.com:/home/solomon/sftp/out-for-justice/intoxModelSF.Rda /Users/solomon/Documents/workspace/out-for-justice/intoxModelSF.Rda
 
+load(file = "~/Documents/workspace/out-for-justice/models/intoxModelSF.Rda")
 
 #ndat <- expand.grid(X = cut_to_mean(levels(dat$Xcut)), 
 #    Y = cut_to_mean(levels(dat$Ycut)), 
@@ -398,17 +401,101 @@ summary(ndat$preds)
 #install.packages("ggmap")
 library("ggmap")
 library("ggplot2")
-g <- qmap("San Francisco", zoom = 12)  
-g +  geom_point(data=ndat[ndat$preds>0.5,], 
+#g <- qmap("San Francisco", zoom = 12)  
+g +  geom_point(data=ndat[ndat$preds>0.05,], 
         aes(x = X, y = Y, alpha = preds, size = preds)) +
     geom_point(aes(y= 37.775271, x = -122.398685, color = "red", size=8)) +
     annotate("text", label = "BayesImpact\nHackSite", 
         y= 37.775271 - .005, x = -122.398685 + .02,
         colour = "red") +
-    ggtitle("Predicted Property Crimes\n(Poisson GBRT)") + 
+    ggtitle("Predicted Intoxication Reports\n(Poisson GBRT)") + 
     theme_bw() 
 ggsave("bla.pdf")
 
+
+
+sfnodes <- read.csv("~/Documents/workspace/out-for-justice/data/sf_points.csv")
+ep <- function(x) eval(parse(text = x))
+
+
+sfnodesdt <- cbind(sfnodes[rep(1:nrow(sfnodes), 
+            each=length(levels(dat$daytime))),], 
+    daytime = levels(dat$daytime))
+
+sfnodesdt <- cbind(sfnodesdt[rep(1:nrow(sfnodesdt), 
+            each=length(levels(dat$superday))),], 
+    superday = levels(dat$superday))
+
+head(sfnodesdt)
+names(sfnodesdt)[2:3] <- c("Y", "X")
+
+# VIOLENT CRIMES
+sfnodesdt$preds <- predict(m1, 
+    newdata = sfnodesdt,
+    n.trees = 7620,
+    type = "response")
+
+write.csv(sfnodesdt, "data/sfnodesdtVIOLENTCRIME.csv", row.names = FALSE)
+
+
+g + geom_point(data=sfnodesdt[sfnodesdt$preds>0.25 & 
+                sfnodesdt$superday %in% c("Saturday") & 
+                sfnodesdt$daytime %in% c("6PM-2AM"),], 
+        aes(x = X, y = Y, alpha = preds/4, size = preds/10, col = "black")) +
+    ggtitle("Predicted Violent Crimes\n(Poisson GBRT)") + 
+    theme_bw() + theme(legend.position="none")
+ggsave("ViolentCrimesForecastNow.pdf")
+
+levels(sfnodesdt$daytime)
+sfnodesdt$daytime <- factor(sfnodesdt$daytime, 
+    levels = c("6PM-2AM", "2AM-10AM", "10AM-6PM"))
+
+g + geom_point(data=sfnodesdt[sfnodesdt$preds>0.15 & 
+                sfnodesdt$superday %in% c("Saturday"),], 
+        aes(x = X, y = Y, alpha = preds, size = preds/5)) +
+    facet_grid(.~daytime) + 
+#    geom_point(aes(y= 37.775271, x = -122.398685, color = "red", size=8)) +
+#    annotate("text", label = "BayesImpact\nHackSite", 
+#        y= 37.775271 - .005, x = -122.398685 + .02,
+#        colour = "red") +
+    ggtitle("Predicted Violent Crimes\n(Poisson GBRT)") + 
+    theme_bw() + theme(legend.position="none")
+    
+ggsave("ViolentCrimesSaturdaybyDaytime.pdf")
+
+
+sfnodesdt$superday <- factor(sfnodesdt$superday, 
+    levels = c("Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"))
+g + geom_point(data=sfnodesdt[sfnodesdt$preds>0.15 & 
+                sfnodesdt$superday %in% c("Saturday", "Sunday") & 
+                sfnodesdt$daytime %in% c("6PM-2AM"),], 
+        aes(x = X, y = Y, alpha = preds, size = preds/5)) +
+    facet_grid(.~superday) + 
+#    geom_point(aes(y= 37.775271, x = -122.398685, color = "red", size=8)) +
+#    annotate("text", label = "BayesImpact\nHackSite", 
+#        y= 37.775271 - .005, x = -122.398685 + .02,
+#        colour = "red") +
+    ggtitle("Predicted Violent Crimes\n(Poisson GBRT)") + 
+    theme_bw() + theme(legend.position="none")
+    
+ggsave("ViolentCrimes6PM-2AMbyDay.pdf")
+
+# PROPERTY CRIMES
+sfnodesdt$preds <- predict(m2, 
+    newdata = sfnodesdt,
+    n.trees = 7620,
+    type = "response")
+
+write.csv(sfnodesdt, "data/sfnodesdtPROPERTYCRIME.csv", row.names = FALSE)
+
+
+# INTOXICATION CRIMES
+sfnodesdt$preds <- predict(m2, 
+    newdata = sfnodesdt,
+    n.trees = 7620,
+    type = "response")
+
+write.csv(sfnodesdt, "data/sfnodesdtINTOXICATIONCRIME.csv", row.names = FALSE)
 
 
 

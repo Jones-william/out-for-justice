@@ -21,5 +21,8 @@ Credits
 * [d3](http://d3js.org/)
 * [d3.geom.contour](http://bl.ocks.org/mbostock/4241134)
 * [NetworkX](http://networkx.lanl.gov/)
+* [gbm](http://cran.r-project.org/web/packages/gbm/index.html)
+* [dplyr](http://cran.r-project.org/web/packages/dplyr/)
+* [ggmap](http://cran.r-project.org/web/packages/ggmap/)
 * [MetroPOLICE Hastings](http://en.wikipedia.org/wiki/Metropolis%E2%80%93Hastings_algorithm)
 * [Edge Contraction](https://gist.github.com/aanastasiou/7639465)
